@@ -1,31 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<script src="C:\Users\timde\Desktop\Room Files\SplineAnimations.js"></script>
-<link rel="stylesheet" type="text/css" href="Styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayCanvas App</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
+    <div id="overlay">
+        <h1 id="objectTitle">Object Title</h1>
+        <p id="objectDescription">Object Description</p>
+    </div>
 
-<!-- Spline container -->
-<div class="spline-container">
-  <!-- Embedded Spline scene iframe -->
-  <iframe src="https://playcanv.as/b/3dc31dbc" frameborder="0" width="100%" height="100%"></iframe>
-  <!-- Text overlay -->
-  <div class="overlay-text">
-    <p>This is the overlay text.</p>
-  </div>
-</div>
+    <!-- The element where your PlayCanvas app will be displayed -->
+    <canvas id="playcanvas-canvas" style="display:none;"></canvas> <!-- Hide the canvas since we're using an iframe -->
 
+    <!-- PlayCanvas Project iframe -->
+    <iframe loading="lazy" src="https://playcanv.as/b/6f8d6b01/" style="width: 100%; height: 600px; border: none;"></iframe>
 
-<!-- The picture to show -->
-<div class="image-overlay">
-  <img src="your-animated.gif" alt="Overlay GIF">
-</div>
-
-<div class="image-overlay">
-  <span class="close-button" onclick="closeOverlay()">&times;</span>
-  <img src="your-image.jpg" alt="Overlay Image">
-</div>
-
+    <!-- External JavaScript file -->
+    <script src="Logic.js"></script>
 </body>
 </html>
