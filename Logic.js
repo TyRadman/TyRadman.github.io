@@ -1,29 +1,19 @@
-// Function to display the overlay with title and description
-function displayOverlay(title, description) {
-  document.getElementById('objectTitle').innerText = title;
-  document.getElementById('objectDescription').innerText = description;
+console.log("Logic.js has loaded.");
+
+window.addEventListener("message", function(event) {
+  // It's good practice to verify the origin of the message for security purposes
+  // For example, if your PlayCanvas app is hosted at "https://playcanv.as", you might check:
+  // if (event.origin === "https://playcanv.as") {
+    
+  console.log("Message received:", event.data);
+  if (event.data.title && event.data.description) {
+      updateOverlay(event.data.title, event.data.description);
+  }
+  //}
+}, false);
+
+function updateOverlay(title, description) {
+  document.getElementById('objectTitle').textContent = title;
+  document.getElementById('objectDescription').textContent = description;
   document.getElementById('overlay').style.display = 'block';
 }
-
-// Close the overlay when clicked
-document.getElementById('overlay').addEventListener('click', function() {
-  this.style.display = 'none';
-});
-
-// Embedding PlayCanvas App
-window.addEventListener('load', function() {
-  var canvas = document.getElementById('playcanvas-canvas');
-  // Replace 'YOUR_APP_ID' with your actual PlayCanvas app id and 'YOUR_ACCESS_TOKEN' with your access token
-  var config = {
-      app_id: 'YOUR_APP_ID',
-      access_token: 'YOUR_ACCESS_TOKEN',
-  };
-  // The script URL below should be replaced with the actual URL of your PlayCanvas application
-  var script = document.createElement('script');
-  script.src = 'https://playcanvas.com/api/assets/files/PlayCanvasLoader.js';
-  document.body.appendChild(script);
-
-  script.onload = function() {
-      PlayCanvasLoader.start(canvas, config);
-  };
-});
