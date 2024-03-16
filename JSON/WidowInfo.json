@@ -1,0 +1,17 @@
+{
+    "title": "Widow Title",
+    "description": "This is a detailed description of the Widow.",
+    "sections": [
+      {
+        "heading": "Heading 1",
+        "description": "Description for Heading 1",
+        "image": "path/to/image1.jpg"
+      },
+      {
+        "heading": "Heading 2",
+        "description": "Description for Heading 2",
+        "image": "path/to/image2.jpg"
+      }
+    ]
+  }
+  

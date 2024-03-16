@@ -1,0 +1,42 @@
+
+#widowPanel {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 20px;
+  z-index: 100;
+}
+
+
+/* //////////INFO PANEL OVERLAY////////////// */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#widowPanel.active {
+  display: block;
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+@keyframes slideOutFromRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#widowPanel.inactive {
+  animation: slideOutFromRight 0.5s ease-out forwards;
+}
