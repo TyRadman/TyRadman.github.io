@@ -7,37 +7,37 @@
     <link rel="stylesheet" href="Styles/Styles.css">
     <link rel="stylesheet" href="Styles/StartOverlay.css">
     <link rel="stylesheet" href="Styles/WidowPanel.css">
+    <link rel="stylesheet" href="Styles/PlayCanvas.css">
+    <link rel="stylesheet" href="Styles/OverlayPanel.css">
+    <link rel="stylesheet" href="Styles/Fonts.css">
     <!-- External JavaScript file -->
     <script src="Javascript/InfoPanelConnector.js"></script>
     <script src="Javascript/StartOverlay.js"></script>
     <script src="JSON/WidowInfoLoader.js"></script>
 </head>
 <body>
+    <div class="page-container">
+        <!-- <div > -->
     <div id="initialOverlay">
         <div class="startButtonsContainer">
-            <button id="startGameButton">Start Game</button>
-            <button id="siteButton">Continue to Phone Site</button>
+            <button id="startButton" class="menuButton startButton">Start Game</button>
+            <button id="websiteButton" class="menuButton websiteButton">Continue to Phone Site</button>
         </div>
     </div>
 
     
     <!-- WIDOW PANEL -->
-    <div id="widowPanel" class="active">
-        <h1 id="objectTitle">Object Title</h1>
-        <p id="objectDescription">Object Description</p>
+    <div id="widowPanel" class="inactive">
+        <h1 id="widowTitle">The Widow</h1>
+        <p id="objectDescription">
+
+        </p>
     </div>
-    
-    <!-- SPACEWAR -->
-    <!-- <div id="overlay" class="inactive">
-        <h1 id="objectTitle">Object Title</h1>
-        <p id="objectDescription">Object Description</p>
-    </div> -->
 
-    <!-- The element where your PlayCanvas app will be displayed -->
-    <canvas id="playcanvas-canvas" style="display:none;"></canvas> <!-- Hide the canvas since we're using an iframe -->
-
-    <!-- PlayCanvas Project iframe -->
-    <iframe loading="lazy" src="https://playcanv.as/e/b/1bd97eef" style="width: 100%; height: 100%; border: none;" allow="xr-spatial-tracking"></iframe>
+    <!-- <div class="playCanvas"> -->
+        <iframe src="https://playcanv.as/e/b/54234224" allow="xr-spatial-tracking"></iframe>
+    <!-- </div> -->
+</div>
 
 </body>
 </html>

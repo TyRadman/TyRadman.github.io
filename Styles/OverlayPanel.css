@@ -1,27 +1,13 @@
-
-#widowPanel {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(0,0,0,1);
-  color: #171111;
-  padding: 20px;
-  z-index: 100;
-}
-
-#widowTitle{
-  color: #dd2221;
-  font-family:'Lodrina_Black';
+#projectTitle
+{
+  /* font-family:'Lodrina_Black'; */
+  font-family:'RobotoSlab_Black';
+  /* color: brown; */
   letter-spacing: 4px;
-  font-size: 80px;
+  font-size: 40px;
   text-align: center;
 }
 
-
-/* //////////INFO PANEL OVERLAY////////////// */
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-100%);
@@ -31,7 +17,7 @@
   }
 }
 
-#widowPanel.active {
+#overlay.active {
   display: block;
   animation: slideInFromLeft 0.5s ease-out forwards;
 }
@@ -45,6 +31,6 @@
   }
 }
 
-#widowPanel.inactive {
+#overlay.inactive {
   animation: slideOutFromRight 0.5s ease-out forwards;
 }

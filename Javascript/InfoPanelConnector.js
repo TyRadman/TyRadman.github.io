@@ -5,17 +5,14 @@ const inactiveTag = 'inactive';
 
 window.addEventListener("message", function(event) {    
   console.log("Message received:", event.data);
-  if (event.data.title && event.data.description && event.data.panelName && event.data.message == 'open') {
-    openOverlay(event.data.title, event.data.description, event.data.panelName);
+  if (event.data.panelName && event.data.message == 'open') {
+    openOverlay(event.data.panelName);
       console.log(event.data.message);
   }
   //}
 }, false);
 
-function openOverlay(title, description, panelName) {
-  // document.getElementById('objectTitle').textContent = title;
-  // document.getElementById('objectDescription').textContent = description;
-  
+function openOverlay(panelName) {
   // enable the panel
   document.getElementById(panelName).className = '';
   document.getElementById(panelName).classList.add(activeTag);
