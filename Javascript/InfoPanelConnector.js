@@ -1,5 +1,3 @@
-//console.log("Logic.js has loaded.");
-// Widow panel: 'widowPanel'
 const activeTag = 'active';
 const inactiveTag = 'inactive';
 
@@ -14,7 +12,7 @@ window.addEventListener("message", function(event) {
 
 function openOverlay(panelName) {
   // enable the panel
-  document.getElementById(panelName).className = '';
+  document.getElementById(panelName).classList.remove(inactiveTag);//.classname = '';
   document.getElementById(panelName).classList.add(activeTag);
 }
 
@@ -26,7 +24,7 @@ window.addEventListener("message", function(event) {
 }, false);
 
 function closeOverlay(panelName){
-  document.getElementById(panelName).className = '';
+  // document.getElementById(panelName).className = '';
+  document.getElementById(panelName).classList.remove(activeTag);
   document.getElementById(panelName).classList.add(inactiveTag);
-  // document.getElementById('overlay').style.display = 'none';
 }
