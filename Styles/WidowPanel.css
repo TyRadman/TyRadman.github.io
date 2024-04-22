@@ -1,21 +1,43 @@
+:root {
+  --textColor-widow: white;
+  --mainColor-widow: #dd2221;
+  --BGColor-widow: #171111;
+}
+/*https://lospec.com/palette-list/tag/scifi*/
 
 #widowPanel {
   display: block;
-  background-color: #171111;
+  background-color: var(--BGColor-widow);
   padding: 20px;
   z-index: 100;
   height: fit-content;
 }
 
+
+/*Text*/
 #widowTitle{
-  color: #dd2221;
+  color: var(--mainColor-widow);
   font-family:'Lodrina_Black';
   letter-spacing: 4px;
   font-size: 80px;
   text-align: center;
 }
+
+.smallTitle-Widow{
+  color: var(--mainColor-widow);
+}
+
+.paragraph-Widow{
+  color: var(--textColor-widow);
+  letter-spacing: 4px;
+}
+
+.paragraph-color-Widow{
+  color: var(--mainColor-widow);
+}
+
 .panelParagraphWidow{
-  color: #dd2221;
+  color: var(--mainColor-widow);
   letter-spacing: 4px;
 }
 
@@ -58,52 +80,22 @@
 
 /* Table */
 .WidowTable{
-width: 80%;
-border-collapse: collapse;
-margin-left: auto;
-margin-right: auto;
-table-layout: fixed;
-padding-top: 5%;
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  padding-top: 5%;
 }
 
 .WidowTableHead
 {
-    border: 3px solid #dd2221;
-    padding: 2%;
-    text-align: left;
-    font-family:'Lodrina_Black';
-    color: #dd2221;
-    font-size: 30px;
-    letter-spacing: 2px;
+  border: 3px solid var(--mainColor-widow);
+  color: var(--mainColor-widow);
 }
 
 .WidowTableItem
 {
-    border: 3px solid #dd2221;
-    padding: 2%;
-    text-align: left;
-    font-family:'Lodrina_Black';
-    color: white;
-    font-size: 25px;
-    letter-spacing: 3px;
-}
-
-.WidowTableItem .PlatformIcon{
-  width: 25%;
-  height:  25%;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.imageContainer {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; 
-}
-
-.PlatformIconName{
-  margin-left: 5%;
-  margin-right: 5%;
+    color: var(--textColor-widow);
+    border: 3px solid var(--mainColor-widow);
 }

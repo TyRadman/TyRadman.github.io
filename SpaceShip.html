@@ -19,25 +19,25 @@
     <script src="Javascript/StartOverlay.js"></script>
 </head>
 <body>
-    <!-- WIDOW PANEL -->
-    <div id="widowPanel" class="overlayWindow inactive">
-        <h1 id="widowTitle">The Widow</h1>
+    <!-- SPACE WAR PANEL -->
+    <div id="spacePanel" class="overlayWindow inactive">
+        <h1 class="title-space title">Meteoric Wars</h1>
         
         <div class="videoContainer">  
             <iframe class="responsive-video" src="https://www.youtube.com/embed/CsiL6ThR-jc?si=WJkJfgyyLXL5vxYa" allowfullscreen></iframe>
         </div>
         
 
-        <table class="WidowTable">
+        <table class="spaceTable">
             <thead>
                 <tr>
-                    <th class="WidowTableHead">
+                    <th class="table-head spaceTableHead">
                         Role
                     </th>
-                    <th class="WidowTableHead">
+                    <th class="table-head spaceTableHead">
                         Platform 
                     </th>
-                    <th class="WidowTableHead">
+                    <th class="table-head spaceTableHead">
                         Tools and technologies
                     </th>
                 </tr>
@@ -45,47 +45,47 @@
 
             <tbody>
                 <tr>
-                    <th class="WidowTableItem">
+                    <th class="table-item spaceTableItem">
                         Solo developer
                     </th>
-                    <th class="WidowTableItem">
+                    <th class="table-item spaceTableItem">
                         <div class="imageContainer">
                             <img src="Media/Icons/pc.svg" class="PlatformIcon">
                                <p class="PlatformIconName">PC</p>
                         </div>
                     </th>
-                    <th class="WidowTableItem">
+                    <th class="table-item spaceTableItem">
                         Unity, Adobe Audition, Adobe Photoshop, Adobe Substance Painter, Blender
                     </th>
                 </tr>
             </tbody>
         </table>
 
-        <p class="widowIntroduction panelParagraph">
-            The Widow is my first personal big project that I started working on part-time in 2020 until the end of 2021. The inspiration to work on this project was out of my love for the survival horror genre and was an opportunity for me to learn more about Unity by implementing interconnected game systems that worked together with the player character and the enemy’s AI.
-
-            I had plans on releasing the game, but realized I’d need more assets than I was able to provide, so I stopped working on it when the game got to full playable state.
+        <p class="panelParagraph paragraph-Space">
+            Meteoric Wars was my first attempt to work on a rogue-like game. The idea was inspired by Sonic Wings (a game I played a lot when I was young) mixed with my love for pixel art and rogue-like games even though the latter wasn’t a part of the plan initially.
         </p>
 
-        <p class="panelSmallTitle">
+        <p class="panelSmallTitle smallTitle-space">
             Concept
         </p>
 
-        <p class="panelParagraph">
-            The Widow is a first-person survival horror game where the player, a detective, investigates the mysterious death of a woman named Ms. Romanov, only to find themselves trapped in the house, and haunted by an unknown presence.
+        <p class="paragraph-Space panelParagraph">
+            Meteoric Wars is a vertical scrolling shoot ‘em up rogue-like video game that takes place in a galaxy that’s been taken over by mutated machinery and aliens. The player has to stop the mutation by destroying the black hole generators that cause it.
+            The player can choose from 5 different unique heroes, each equipped with a special ship and unique skills. 
+            The enemies are different from run to run in every aspect. So the player has to rely on skill, rather than memory.
         </p>
 
-        <p class="panelSmallTitle">
+        <p class="panelSmallTitle smallTitle-space">
             Game Systems
         </p>
 
-        <p class="panelParagraph">
-            "The Widow" was my chance to implement a couple of systems, some of which are:
+        <p class="paragraph-Space panelParagraph">
+            Here's the list of the systems implemented for the game:
         </p>
 
-        <ul class="panelParagraph">
+        <ul class="paragraph-Space panelParagraph">
             <li class="bulletPoint ">
-                <b class="panelParagraphWidow">Player Interaction System</b>: Allows the player to interact with predetermined interactables, including doors, collectibles, and puzzles.
+                <b class="paragraph-color-Space">Procedural spaceships generation</b>: All the enemies in the game are procedurally generated except for bosses and the shop (which you can optionally fight.) This feature came to life due to my lack of artistic skills. I wrote a simple algorithm that takes predefined spaceship body parts (body, wings, and tail) randomizes their dimensions, colors and numbers, and mashes it all together to create (mostly) good-looking spaceships that fit the game style.
             </li>
             
             <div class="imagesGrid">
@@ -97,7 +97,7 @@
             </a>
             </div>
             <li class="bulletPoint">
-                <b class="panelParagraphWidow">Camera Effects System</b>: Features dynamic camera effects that respond to the player’s state. For example, the view gets distorted when the player runs out of stamina, and the camera’s focus changes based on what object the player is looking at.
+                <b class="paragraph-color-Space">Camera Effects System</b>: Features dynamic camera effects that respond to the player’s state. For example, the view gets distorted when the player runs out of stamina, and the camera’s focus changes based on what object the player is looking at.
             </li>
             <div class="imagesGrid">
                 <a href="Media/TheWidow/TheWidow_BlurEffect.gif" data-lightbox="Interaction" data-title="Interaction">
@@ -108,7 +108,7 @@
                 </a>
                 </div>
             <li class="bulletPoint">
-                <b class="panelParagraphWidow">Puzzles</b>: Include puzzles with random solutions that challenge players to think every time they solve them. For instance, the piano puzzle, which is solved by playing a certain combination of keys, has a unique solution in every run, and the solution is embedded in a different note that the player finds before coming across the puzzle.
+                <b class="paragraph-color-Space">Puzzles</b>: Include puzzles with random solutions that challenge players to think every time they solve them. For instance, the piano puzzle, which is solved by playing a certain combination of keys, has a unique solution in every run, and the solution is embedded in a different note that the player finds before coming across the puzzle.
             </li>
             <div class="imagesGrid">
                 <a href="Media/TheWidow/TheWidow_Puzzle.gif" data-lightbox="Interaction" data-title="Interaction">
@@ -116,7 +116,7 @@
                 </a>
                 </div>
             <li class="bulletPoint">
-                <b class="panelParagraphWidow">Dialogue and Tips</b>: A dialogue system adds a narrative to the game, and a tips display system teaches players how to interact with the game.
+                <b class="paragraph-color-Space">Dialogue and Tips</b>: A dialogue system adds a narrative to the game, and a tips display system teaches players how to interact with the game.
             </li>
             <div class="imagesGrid">
                 <a href="Media/TheWidow/TheWidow_FlashlightTip.gif" data-lightbox="Interaction" data-title="Interaction">
@@ -124,13 +124,13 @@
                 </a>
                 </div>
             <li class="bulletPoint">
-                <b class="panelParagraphWidow">Enemy AI</b>: The entity chasing the player uses a finite state machine to look for and hunt down the player. It has a line of sight as well as the ability to hear the player, depending on the player's movements. The slower the player moves, the less likely it is for the enemy to hear them.
+                <b class="paragraph-color-Space">Enemy AI</b>: The entity chasing the player uses a finite state machine to look for and hunt down the player. It has a line of sight as well as the ability to hear the player, depending on the player's movements. The slower the player moves, the less likely it is for the enemy to hear them.
             </li>
             <li class="bulletPoint">
-                <b class="panelParagraphWidow">Hide Spots</b>: Some spots can render the player invisible if the entity didn’t see the player hide there.
+                <b class="paragraph-color-Space">Hide Spots</b>: Some spots can render the player invisible if the entity didn’t see the player hide there.
             </li>
             <li class="bulletPoint">
-                <b class="panelParagraphWidow">Inventory System</b>: The player can collect and use items in the inventory. Items range from a flashlight and batteries to keys, energy drinks, puzzle pieces, and more.
+                <b class="paragraph-color-Space">Inventory System</b>: The player can collect and use items in the inventory. Items range from a flashlight and batteries to keys, energy drinks, puzzle pieces, and more.
             </li>
             <div class="imagesGrid">
                 <a href="Media/TheWidow/TheWidow_Inventory.png" data-lightbox="Interaction" data-title="Interaction">
@@ -138,7 +138,7 @@
                 </a>
                 </div>
             <li class="bulletPoint">
-                <b class="panelParagraphWidow">Jump-scares System</b>: Before the player encounters the entity, random jump-scares might occur in certain areas, with the entity either passing by or staring at the player from a distance before walking away.
+                <b class="paragraph-color-Space">Jump-scares System</b>: Before the player encounters the entity, random jump-scares might occur in certain areas, with the entity either passing by or staring at the player from a distance before walking away.
             </li>
             <div class="imagesGrid">
                 <a href="Media/TheWidow/TheWidow_Jumpscare.gif" data-lightbox="Interaction" data-title="Interaction">
@@ -146,7 +146,7 @@
                 </a>
                 </div>
             <li class="bulletPoint">
-                <b class="panelParagraphWidow">Start and End Menu</b>: Includes settings for brightness and audio volume.
+                <b class="paragraph-color-Space">Start and End Menu</b>: Includes settings for brightness and audio volume.
             </li>
             <div class="imagesGrid">
                 <a href="Media/TheWidow/Widow_Settings.png" data-lightbox="SettingsMenu" data-title="SettingsMenu">
@@ -158,10 +158,10 @@
                 </div>
                 
             <li class="bulletPoint">
-                <b class="panelParagraphWidow">Audio Management</b>: A system that adds transitions to the music being played in the background depending on the situation.
+                <b class="paragraph-color-Space">Audio Management</b>: A system that adds transitions to the music being played in the background depending on the situation.
             </li>
             <li class="bulletPoint">
-                <b class="panelParagraphWidow">Item Spawning</b>: Collectibles are spawned randomly and are semi-equally distributed across the level.
+                <b class="paragraph-color-Space">Item Spawning</b>: Collectibles are spawned randomly and are semi-equally distributed across the level.
             </li>
         </ul>
     </div>

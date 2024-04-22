@@ -20,15 +20,32 @@
   position:absolute;
 }
 
-
-
-/* for all the panels*/
 .overlayWindow{
   position: absolute;
   top: 0;
   left: 0;
   width: 70%;
   height: 100%;
+}
+
+/* Text*/
+.title{
+  font-family:'Lodrina_Black';
+  letter-spacing: 4px;
+  font-size: 80px;
+  text-align: center;
+}
+
+.panelSmallTitle{
+  text-align: justify;
+  text-align-last: center;
+
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  font-family: 'Lodrina_Regular';
+  font-size: 45px;
 }
 
 .panelParagraph{
@@ -39,27 +56,14 @@
   padding-left: 10%;
   padding-right: 10%;
   line-height: 1.5;
-  color: white;
   font-family: 'Lodrina_Light';
   font-size: 30px;
 }
 
 
-.panelSmallTitle{
-  text-align: justify;
-  text-align-last: center;
-
-  padding-top: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
-
-  color: #dd2221;
-  font-family: 'Lodrina_Regular';
-  font-size: 45px;
-}
-
 @keyframes slideInFromLeft {
   from {
+    display: block;
     transform: translateX(-100%);
   }
   to {
@@ -77,11 +81,13 @@
     transform: translateX(0);
   }
   to {
+    display: none;
     transform: translateX(-100%);
   }
 }
 
 #overlay.inactive {
+  display: none;
   animation: slideOutFromRight 0.5s ease-out forwards;
 }
 
@@ -90,8 +96,6 @@
   margin-right: 10%;
   margin-top: 3%;
   margin-bottom: 8%;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
   gap: 10px;
 }
 
@@ -115,4 +119,42 @@
 .responsive-video {
   height: 100%;
   width: 100%;
+}
+
+/*Table*/
+.table-head{
+  padding: 2%;
+  text-align: left;
+  font-family:'Lodrina_Black';
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.table-item
+{
+    padding: 2%;
+    text-align: left;
+    font-family:'Lodrina_Black';
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.table-item .PlatformIcon{
+  width: 25%;
+  height:  25%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.imageContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.PlatformIconName{
+  margin-left: 5%;
+  margin-right: 5%;
 }

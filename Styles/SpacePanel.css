@@ -1,0 +1,108 @@
+:root {
+  --textColor: #b5c7b6;
+  /* --mainColor: #6a9394; */
+  --mainColor: #5c7680;
+  /* --mainColor: #555f73; */
+  --BGColor: #131014;
+}
+
+.title-space{
+  color: var(--mainColor);
+}
+
+#spacePanel {
+  display: block;
+  background-color: var(--BGColor);
+  padding: 20px;
+  z-index: 100;
+  height: fit-content;
+}
+
+.smallTitle-space{
+  color: var(--mainColor);
+}
+
+.paragraph-Space{
+  color: var(--textColor);
+  letter-spacing: 4px;
+}
+
+.paragraph-color-Space{
+  color: var(--mainColor);
+}
+
+
+/* //////////INFO PANEL OVERLAY////////////// */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#spacePanel.active {
+  display: block;
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+@keyframes slideOutFromRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#spacePanel.inactive {
+  animation: slideOutFromRight 0.5s ease-out forwards;
+}
+
+.spaceImage{
+  margin-bottom: 2%;
+
+}
+
+/* Table */
+.spaceTable{
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  padding-top: 5%;
+}
+
+.spaceTableHead
+{
+  border: 3px solid var(--mainColor);
+  color: var(--mainColor);
+}
+
+.spaceTableItem
+{
+  color: var(--textColor);
+  border: 3px solid var(--mainColor);
+}
+
+.spaceTableItem .PlatformIcon{
+  width: 25%;
+  height:  25%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.imageContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.PlatformIconName{
+  margin-left: 5%;
+  margin-right: 5%;
+}
