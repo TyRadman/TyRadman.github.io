@@ -20,6 +20,11 @@
   position:absolute;
 }
 
+.video-webm{
+  width: 100%;
+  margin-top: 5%;
+}
+
 .overlayWindow{
   position: absolute;
   top: 0;
