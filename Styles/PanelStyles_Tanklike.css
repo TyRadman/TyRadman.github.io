@@ -1,0 +1,98 @@
+:root {
+  --textColor-widow: white;
+  --mainColor-widow: #dd2221;
+  --BGColor-widow: #171111;
+}
+/*https://lospec.com/palette-list/tag/scifi*/
+
+#tanklikePanel {
+  display: block;
+  background-color: var(--BGColor-widow);
+  padding: 20px;
+  z-index: 100;
+  height: fit-content;
+}
+
+
+/*Text*/
+#title-tanklike{
+  color: var(--mainColor-widow);
+  font-family:'Lodrina_Black';
+  letter-spacing: 4px;
+  font-size: 80px;
+  text-align: center;
+}
+
+.small-title-tanklike{
+  color: var(--mainColor-widow);
+}
+
+.paragraph-tanklike{
+  color: var(--textColor-widow);
+  letter-spacing: 4px;
+}
+
+.paragraph-color-tanklike{
+  color: var(--mainColor-widow);
+}
+
+.panel-paragraph-tanklike{
+  color: var(--mainColor-widow);
+  letter-spacing: 4px;
+}
+
+
+/* //////////INFO PANEL OVERLAY////////////// */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#tanklikePanel.active {
+  display: block;
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+@keyframes slideOutFromRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#tanklikePanel.inactive {
+  animation: slideOutFromRight 0.5s ease-out forwards;
+}
+
+.image-tanklike{
+  margin-bottom: 2%;
+
+}
+
+/* Table */
+.table-tanklike{
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  padding-top: 5%;
+}
+
+.table-head-tanklike
+{
+  border: 3px solid var(--mainColor-widow);
+  color: var(--mainColor-widow);
+}
+
+.table-item-tanklike
+{
+    color: var(--textColor-widow);
+    border: 3px solid var(--mainColor-widow);
+}

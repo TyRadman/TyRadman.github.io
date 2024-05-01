@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="Styles/MainPage.css">
     <link rel="stylesheet" href="Styles/OverlayPanel.css">
     <link rel="stylesheet" href="Styles/StartOverlay.css">
-    <link rel="stylesheet" href="Styles/WidowPanel.css">
-    <link rel="stylesheet" href="Styles/SpacePanel.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_TheWidow.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_MeteoricWars.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_Tanklike.css">
     <link rel="stylesheet" href="Styles/PlayCanvas.css">
     <!-- Light box to Display images in full size. Thanks to Lokesh Dhakar for the free package -->
     <link rel="stylesheet" href="Lightbox/lightbox.css">
@@ -18,6 +19,7 @@
     <!-- External JavaScript file -->
     <script src="Javascript/InfoPanelConnector.js"></script>
     <script src="Javascript/StartOverlay.js"></script>
+    <script src="Javascript/VideoLoader.js"></script>
 </head>
 <body>
 <div class="page-container">
@@ -29,7 +31,7 @@
     </div>
 
     <!-- WIDOW PANEL -->
-    <div id="widowPanel" class="overlayWindow inactive">
+    <div class="overlayWindow inactive" id="widowPanel">
         <h1 id="widowTitle">The Widow</h1>
 
         <div class="videoContainer">
@@ -199,10 +201,15 @@
                 semi-equally distributed across the level.
             </li>
         </ul>
+
+        <div class="middle-icon-container">
+            <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+            <a href="https://github.com/TyRadman/PortfolioCode/tree/59c305fc42dc3758b17a353fc7e66037eb34e3a9/TheWidow"
+               class="link-text" target="_blank">Download source code</a>
+        </div>
     </div>
 
-
-    <!-- SPACE WAR PANEL -->
+    <!-- METEORIC WARS PANEL -->
     <div id="spacePanel" class="overlayWindow inactive">
         <h1 class="title-space title">Meteoric Wars</h1>
 
@@ -239,7 +246,7 @@
                     </div>
                 </th>
                 <th class="table-item spaceTableItem">
-                    Unity, Adobe Audition, Adobe Photoshop, Adobe Substance Painter, Blender
+                    Unity, Adobe Photoshop, Pixel Studio, Bfxr (sound effects generator)
                 </th>
             </tr>
             </tbody>
@@ -269,7 +276,7 @@
         </p>
 
         <p class="paragraph-Space panelParagraph">
-            Here's the list of the systems implemented for the game:
+            Here's a list of some the systems implemented for the game that I'd like to highlight:
         </p>
 
         <ul class="paragraph-Space panelParagraph">
@@ -378,7 +385,7 @@
                     <source src="Media/MeteoricWars/ShopMenus.webm" type="video/webm">
                 </video>
 
-                <p class="paragraph-Space panelParagraph">
+                <p class="paragraph-Space">
                     The player can attack the shop. When the shop's HP go down, it enters its aggressive state.
                 </p>
 
@@ -386,8 +393,8 @@
                     <source src="Media/MeteoricWars/Shop_FirstLevel.webm" type="video/webm">
                 </video>
 
-                <p class="paragraph-Space panelParagraph">
-                    The boss upgrades its aggressive state every time the player destroys it. The stronger the shop
+                <p class="paragraph-Space">
+                    The shop upgrades its aggressive state every time the player destroys it. The stronger the shop
                     gets, the more rewards it drops when destroyed.
                 </p>
 
@@ -419,10 +426,369 @@
                 </video>
             </div>
         </ul>
+
+        <p class="panelSmallTitle smallTitle-space">
+            Unity Editor Tools
+        </p>
+        <p class="paragraph-Space panelParagraph">
+            I'm a big fan of Unity Editor scripts and I often get carried away during the development time making tools
+            that make it enhance the management of the project and its features.
+            The following are the tools I want to highlight:
+        </p>
+
+        <p class="panelParagraph paragraph-Space">
+            <b class="paragraph-color-Space">Game Editor Window</b>:
+            To streamline testing and debugging,
+            I developed a custom Editor Window that facilitates quick access to various classes, assets, and scenes.
+            This tool significantly reduced the time required to locate and modify these components. The Game Editor
+            tool has definitely accelerated my development workflow.
+        </p>
+        <div class="images-grid">
+            <a href="Media/MeteoricWars/GameEditorWindow.png" data-lightbox="Interaction" data-title="Interaction">
+                <img src="Media/MeteoricWars/GameEditorWindow.png" class="WidowImage" alt="">
+            </a>
+        </div>
+
+        <p class="panelParagraph paragraph-Space">
+            <b class="paragraph-color-Space">Game Manager Components Cacher</b>:
+            One of the more tedious aspects of Unity development has been managing component references. To address
+            this, I developed the Game Manager Cacher, a tool designed to streamline and optimize how components are
+            accessed and managed within the Unity Editor.
+            This tool organizes all component references into dynamically collapsible sections within the inspector
+            depending on the headers added in the properties declaration, which enhances clarity and ease of use. An
+            editor button does all this (except for project file references.)
+        </p>
+        <div class="images-grid">
+            <a href="Media/MeteoricWars/GameEditorWindow.png" data-lightbox="Interaction" data-title="Interaction">
+                <img src="Media/MeteoricWars/GameManagerEditor.png" class="WidowImage" alt="">
+            </a>
+        </div>
+
+
+        <p class="panelSmallTitle smallTitle-space">
+            Shader Graphs
+        </p>
+        <p class="paragraph-Space panelParagraph">
+            It is no secret that I'm not an artist. But a game need some hue in it, so I had to create shaders that can
+            do the job for me.\n
+            Here are the top shaders used in the game:
+        </p>
+
+        <p class="panelParagraph paragraph-Space">
+            <b class="paragraph-color-Space">Procedural Planets Shader</b>:
+            "The planets were the last feature I worked on in the game; therefore,
+            I didn’t have the chance to fully integrate them. This shader utilizes a noise texture, which it scales
+            using customizable values,
+            combines into a single texture, and then colors to produce aesthetically nice looking planets.
+        </p>
+        <div class="images-grid">
+            <a href="Media/MeteoricWars/Planets_SG.png" data-lightbox="Interaction" data-title="Interaction">
+                <img src="Media/MeteoricWars/Planets_SG.png" class="WidowImage" alt="">
+            </a>
+            <video class="video-webm" autoplay muted loop>
+                <source src="Media/MeteoricWars/Planets_Example.webm" type="video/webm">
+            </video>
+        </div>
+
+        <p class="panelParagraph paragraph-Space">
+            <b class="paragraph-color-Space">Nebula shader</b>:
+            The nebula (or clouds) background of the game consists of 2-3 overlaid sprites with different opacity
+            values, each rendered using this shader.
+        </p>
+        <div class="images-grid">
+            <a href="Media/MeteoricWars/NebulaSG.png" data-lightbox="Interaction" data-title="Interaction">
+                <img src="Media/MeteoricWars/NebulaSG.png" class="WidowImage" alt="">
+            </a>
+            <a href="Media/MeteoricWars/Nebula_Example.png" data-lightbox="Interaction" data-title="Interaction">
+                <img src="Media/MeteoricWars/Nebula_Example.png" class="WidowImage" alt="">
+            </a>
+            <a href="Media/MeteoricWars/Nebula_Example_01.png" data-lightbox="Interaction" data-title="Interaction">
+                <img src="Media/MeteoricWars/Nebula_Example_01.png" class="WidowImage" alt="">
+            </a>
+        </div>
+
+        <p class="panelParagraph paragraph-Space">
+            <b class="paragraph-color-Space">Stars shader</b>:
+            The stars were the first visual element I added to the game. Initially, they were created using a particle
+            system, but I found this approach difficult to manage. As a solution, I developed a shader graph to handle
+            the star animations more efficiently.
+        </p>
+        <div class="images-grid">
+            <a href="Media/MeteoricWars/Stars_SG.png" data-lightbox="Interaction" data-title="Interaction">
+                <img src="Media/MeteoricWars/Stars_SG.png" class="WidowImage" alt="">
+            </a>
+            <a href="Media/MeteoricWars/Stars_Example.png" data-lightbox="Interaction" data-title="Interaction">
+                <img src="Media/MeteoricWars/Stars_Example.png" class="WidowImage" alt="">
+            </a>
+        </div>
+
+        <div class="middle-icon-container">
+            <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+            <a href="https://github.com/TyRadman/PortfolioCode/tree/99288edda54252b9b0db06500eb81505b807dc33/MeteoricWars"
+               class="link-text" target="_blank">Download source code</a>
+        </div>
+    </div>
+
+    <!-- TANKLIKE PANEL -->
+    <div id="tanklikePanel" class="overlayWindow inactive">
+        <h1 id="title-tanklike">Tanklike</h1>
+
+        <div class="videoContainer">
+            <iframe class="responsive-video" src="https://www.youtube.com/embed/CsiL6ThR-jc?si=WJkJfgyyLXL5vxYa"
+                    allowfullscreen></iframe>
+        </div>
+
+
+        <table class="WidowTable">
+            <thead>
+            <tr>
+                <th class="table-head WidowTableHead">
+                    Role
+                </th>
+                <th class="table-head WidowTableHead">
+                    Platform
+                </th>
+                <th class="table-head WidowTableHead">
+                    Tools and technologies
+                </th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <th class="table-item WidowTableItem ">
+                    Developer, Tech Artist
+                </th>
+                <th class="table-item WidowTableItem">
+                    <div class="imageContainer">
+                        <img src="Media/Icons/pc.svg" class="PlatformIcon">
+                        <p class="PlatformIconName">PC</p>
+                    </div>
+                </th>
+                <th class="table-item WidowTableItem">
+                    Unity, Adobe Photoshop, Blender, Github
+                </th>
+            </tr>
+            </tbody>
+        </table>
+
+        <p class="paragraph-Widow panelParagraph">
+            Tanklike is tank game that I've been developing alongside Mohazza, a close friend and collaborator. <br/>Our
+            shared enthusiasm for Battle City, a childhood favorite which we remade in 3D three years ago, inspired us
+            to take on this new project.
+        </p>
+
+        <p class="panelSmallTitle smallTitle-Widow">
+            Concept
+        </p>
+
+        <p class="paragraph-Widow panelParagraph">
+            Tanklike Adventure is a tank game inspired by the classical Battle City where players pilot, upgrade, and
+            customize their
+            tanks to reclaim humanity’s post-apocalyptic world ruled by rogue AI tanks in a procedurally generated
+            world.
+        </p>
+
+        <p class="panelSmallTitle smallTitle-Widow">
+            Game Systems
+        </p>
+
+        <p class="paragraph-Widow panelParagraph">
+            While Tanklike is still in development, we have successfully implemented many of the core mechanics we
+            envisioned, with a few remaining to be refined through further playtesting. Here are some of the key
+            features and mechanics I have incorporated so far in the project:
+        </p>
+
+        <ul class="paragraph-Widow panelParagraph">
+
+            <p><b class="paragraph-color-Widow">Tank recoil system</b>: In Tanklike, tanks experience a recoil effect
+                when moving, halting, or firing, akin to real-life vehicles.
+                Initially, we implemented a static recoil animation, which did the job at the time. However, to account
+                for the varied dynamics of different actions,
+                I developed the Tank Recoil System. This system performs dynamic animations by adjusting intensities and
+                motion curves specific to each action.
+                I used Unity’s Scriptable Objects to store and reuse the values passed to the system to make it easy to
+                adjust the values when needed.
+            </p>
+            <div class="imagesGrid">
+                <video class="video-webm" autoplay muted loop>
+                    <source src="Media/Tanklike/TankRecoil.webm" type="video/webm">
+                </video>
+            </div>
+
+            <p><b class="paragraph-color-Widow">Procedural Level Generation</b>: I designed and implemented a procedural
+                level generator that dynamically constructs levels by connecting random rooms from a pool.
+                Tanklike is a room-based game with camera transitions between rooms. This design simplified the
+                complexity of the level generation algorithm, as there were no hallways to connect the rooms.
+                The system places key rooms—the boss room, the player start room, and the shop—within the level layout
+                and ensures they are not directly connected to one another.
+                As for further regions in the level, the player will be forced to look for 3 keys that unlock the boss
+                room throughout the entire level.
+                <br/>P.S. The scale and number of rooms in the screenshot are exaggerated. The actual game has fewer
+                rooms.
+
+            </p>
+            <div class="imagesGrid">
+                <a href="Media/Tanklike/LevelGeneration.png" data-lightbox="Interaction"
+                   data-title="Interaction">
+                    <img src="Media/Tanklike/LevelGeneration.png" class="Tanklike_LevelGeneration_ScreenShot" alt="">
+                </a>
+            </div>
+
+            <p><b class="paragraph-color-Widow">Local Multiplayer</b>: Tanklike has a multiplayer option that allows
+                players to play together on the same device.
+                The system was implemented using Unity's new input system. The difficulty of the game dynamically
+                increases in multiplayer mode.
+            </p>
+            <div class="imagesGrid">
+                <video class="video-webm" autoplay muted loop>
+                    <source src="Media/Tanklike/TankRecoil.webm" type="video/webm">
+                </video>
+            </div>
+
+            <p><b class="paragraph-color-Widow">Aim-assit</b>: The game has an aim-assist feature that takes place when
+                the player stops both movement and aim. This adds a little boost to players who have difficulties aiming
+                in the game.
+            </p>
+            <div class="imagesGrid">
+                <video class="video-webm" autoplay muted loop>
+                    <source src="Media/Tanklike/AimAssist.webm" type="video/webm">
+                </video>
+            </div>
+
+            <p><b class="paragraph-color-Widow">Player Skill Tree</b>: In Tanklike, players can enhance their tanks by
+                upgrading weapons, gaining new abilities, and increasing stats through a skill tree.
+                A key challenge was enabling the UI to be navigable with button inputs for controller users, eliminating
+                the need for cursor control. I addressed this by developing a custom UI element framework.
+                This framework includes a parent component that manages navigation through four directional slots, with
+                each slot having a definable destination. The process of setting these destinations is streamlined with
+                a custom editor script.
+                This navigation setup is applied across all UI components, including the skill tree cells.
+                <br/>
+                I only implemented 5 skills in the skill tree as we haven't fully tested the game's overall progression.
+                It's still far down the project's timeline. But the system's core functionality is working.
+            </p>
+            <div class="imagesGrid">
+                <video class="video-webm" autoplay muted loop>
+                    <source src="Media/Tanklike/SkillTree.webm" type="video/webm">
+                </video>
+            </div>
+
+            <p><b class="paragraph-color-Widow">Dynamic Camera Controls</b>: Camera control in Tanklike evolved as the
+                project progressed. Initially, we utilized Cinemachine for basic follow mechanics, tracking the player’s
+                movement. However, to better meet gameplay needs, I developed an enhanced camera controller with several
+                key features:
+            <ul>
+                <li>
+                    The camera follows the player’s cursor instead of the player directly, providing a better feeling
+                    when aiming and exploring.
+                </li>
+                <li>
+                    In two-player mode, the camera follows the midpoint between both players' cursors, ensuring both are
+                    always in view.
+                </li>
+                <li>
+                    The camera’s following speed increases when a player is boosting, keeping the action in frame during
+                    high-speed movements.
+                </li>
+                <li>
+                    The camera zooms out during combat for a broader view and zooms in during safe periods for a more
+                    focused exploration.
+                </li>
+                <li>
+                    During key events, such as entering a boss room, the camera automatically focuses on the main
+                    targets to enhance the dramatic impact.
+                </li>
+                <li>
+                    At all times, the camera keeps the outer boundaries of the room out of view.
+                </li>
+            </ul>
+            </p>
+            <div class="imagesGrid">
+                <video class="video-webm" autoplay muted loop>
+                    <source src="Media/Tanklike/CameraControls.webm" type="video/webm">
+                </video>
+            </div>
+
+            <p><b class="paragraph-color-Widow">Player constraints</b>: In Tanklike, I implemented the player
+                constraints system, a straightforward but crucial mechanism that regulates available player actions at
+                any given moment.
+                This system determines whether players can shoot, move, use hold-down abilities, super abilities, boost,
+                etc., based on their current state in the game.
+                Configurable directly in the Unity Inspector, this system allows for easy adjustments and real-time
+                application to gameplay scenarios.
+            </p>
+            <div class="imagesGrid">
+                <video class="video-webm" autoplay muted loop>
+                    <source src="Media/Tanklike/PlayerConstraints.webm" type="video/webm">
+                </video>
+            </div>
+
+            <p><b class="paragraph-color-Widow">Tools Shop</b>: In Tanklike, players have the opportunity to customize
+                their gameplay through the Tools Shop.
+                Here, players can purchase special tools that offer a range of abilities, enhancing their tactical
+                options. These tools include attack enhancements, healing capabilities, and the ability to summon
+                assistant bots, among others.
+                Each tool has limited uses, adding a strategic layer to resource management. Additionally, players can
+                sell tools they no longer need back to the shop in exchange for coins.
+            </p>
+            <div class="imagesGrid">
+                <video autoplay muted loop class="video-webm" data-src="Media/Tanklike/Shop_Buy.webm">
+                    <source type="video/webm">
+                </video>
+                <video autoplay muted loop class="video-webm" data-src="Media/Tanklike/Shop_ToolsUse.webm">
+                    <source type="video/webm">
+                </video>
+                <video autoplay muted loop class="video-webm" data-src="Media/Tanklike/Shop_Sell.webm">
+                    <source type="video/webm">
+                </video>
+            </div>
+        </ul>
+
+
+        <p class="panelSmallTitle smallTitle-Widow">
+            Unity Editor Tools
+        </p>
+        <p class="paragraph-Widow panelParagraph">
+            I love messing with the Unity Editor scripts and frequently invest some development time creating tools that
+            improve project and feature management.
+            Here are the tools I'd like to highlight:
+        </p>
+
+        <p class="paragraph-Widow panelParagraph">
+            <b class="paragraph-color-Widow">Mapmaker</b>:
+            I implemented a mapmaker tool that streamlined our room design process.
+            With this tool, we could build the room using tiles, set spawn points for enemies, level props, and
+            destructibles that drop collectables.
+            The visuals of the individual tiles and props change depending on the level.
+            The room is then saved as a scriptable object and can be viewed by the inspector by drawing a simplified
+            version of it using a custom editor script.
+        </p>
+        <div class="images-grid">
+            <video autoplay muted loop class="video-webm" data-src="Media/Tanklike/MapMaker.webm">
+                <source type="video/webm">
+            </video>
+            <video autoplay muted loop class="video-webm" data-src="Media/Tanklike/Map.webm">
+                <source type="video/webm">
+            </video>
+        </div>
+
+        <p class="paragraph-Widow panelParagraph">
+            <b class="paragraph-color-Widow">Component Breaks</b>:
+            I implemented a little custom editor script that acts as a visual representation of a break between groups
+            of components that are placed on the same game object.
+            The font size, text, and colors can be set through a collapsable button in the break itself.
+        </p>
+        <div class="images-grid">
+            <a href="Media/Tanklike/Breaks.png" data-lightbox="Interaction"
+               data-title="Interaction">
+                <img src="Media/Tanklike/Breaks.png" class="Tanklike_Breaks_ScreenShot" alt="">
+            </a>
+        </div>
     </div>
 
 
-    <iframe src="https://playcanv.as/e/b/f436bb45"></iframe>
+    <iframe src="https://playcanv.as/e/b/a19b36a5"></iframe>
 
 </div>
 
