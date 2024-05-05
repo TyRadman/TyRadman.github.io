@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: "RobotoSlab_Bold";
-  src: url('RobotoSlab-Bold.ttf') format('truetype');
+  src: url('fonts/RobotoSlab-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "RobotoSlab_Regular";
-  src: url('RobotoSlab-Regular.ttf') format('truetype');
+  src: url('fonts/RobotoSlab-Regular.ttf') format('truetype');
 }
 
 /* Lodrina */

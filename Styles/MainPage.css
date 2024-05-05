@@ -13,7 +13,7 @@ html::-webkit-scrollbar {
 
 .page-container{
   display: flex;
-  justify-content: center; /* Horizontally center the content */
+  justify-content: stretch; /* Horizontally center the content */
   align-items: center; /* Vertically center the content */
   min-height: 100%; /* Use 100vh for full viewport height */
   width: 100vw; /* Use 100vw for full viewport width */

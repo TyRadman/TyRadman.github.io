@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
   let startButton = document.getElementById('startButton');
   // let startButton = document.getElementsByClassName('startButton');
   let siteButton = document.getElementById('websiteButton');
-  let overlayPanel = document.getElementById('initialOverlay');
+  let overlayPanel = document.getElementById('initial-overlay');
 
   startButton.addEventListener('click', function(){
     overlayPanel.classList.add('inactive');

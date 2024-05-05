@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="Styles/PanelStyles_TheWidow.css">
     <link rel="stylesheet" href="Styles/PanelStyles_MeteoricWars.css">
     <link rel="stylesheet" href="Styles/PanelStyles_Tanklike.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_Cubarun.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_Common.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_MetroVancouver.css">
     <link rel="stylesheet" href="Styles/PlayCanvas.css">
     <!-- Light box to Display images in full size. Thanks to Lokesh Dhakar for the free package -->
     <link rel="stylesheet" href="Lightbox/lightbox.css">
@@ -23,11 +26,52 @@
 </head>
 <body>
 <div class="page-container">
-    <div id="initialOverlay">
-        <div class="mainMenuButtonsContainer">
-            <button id="startButton" class="menuButton startButton">Start Game</button>
-            <button id="websiteButton" class="menuButton websiteButton">Continue to Phone Site</button>
+    <iframe src="https://playcanv.as/e/b/02fa2620" class="playcanvas-content"></iframe>
+
+    <div id="initial-overlay">
+        <div class="start-content-container">
+            <div class="start-text-container">
+                <p class="start-name-text">
+                    Ty Radman
+                </p>
+                <p class="start-title-text">
+                    Game Developer / Designer
+                </p>
+
+                <p class="Introduction-text">
+                    Hello there, Adventurer! <br/> My name is Ty, and I'm deeply passionate about game design and development. A self-taught developer,
+                    I’ve been honing my skills for nearly four years, with several games in development, including an
+                    upcoming roguelike title.
+                    <br/><br/>
+                    After completing my Information Technology degree in 2021, I began pursuing a Master of Digital
+                    Media.
+                    I have experience as a graphic designer and was involved in a YouTube channel where we shared
+                    tutorials on remaking classic games with modern visuals and mechanics, though this project is
+                    currently on hold due to my studies.
+                    <br/><br/>
+                    I primarily use Unity for my projects and am expanding my skills into Unreal Engine to refine my
+                    C++.
+                    I look forward to your feedback and hope you enjoy exploring my work!
+                </p>
+            </div>
+            <div class="mainMenuButtonsContainer">
+                <button id="startButton" class="menuButton startButton"><p>Start Game</p>
+                    <p class="little-text">HIGHLY RECOMMENDED! But only if you're on a computer</p></button>
+                <button id="websiteButton" class="menuButton websiteButton"><p>Continue to Phone Site</p>
+                    <p class="little-text">For mobile device users</p>
+                </button>
+            </div>
+
+            <div class="start-text-container">
+                <p class="start-footer">
+                    © 2024 by Ty Radman. All rights reserved.
+                </p>
+            </div>
         </div>
+    </div>
+
+    <div id="blur-backgroud" class="inactive">
+        <div></div>
     </div>
 
     <!-- WIDOW PANEL -->
@@ -214,10 +258,8 @@
         <h1 class="title-space title">Meteoric Wars</h1>
 
         <div class="videoContainer">
-            <iframe class="responsive-video" src="https://www.youtube.com/embed/CsiL6ThR-jc?si=WJkJfgyyLXL5vxYa"
-                    allowfullscreen></iframe>
+            <iframe class="responsive-video" src="https://www.youtube.com/embed/Pb-3FAy7LIk?si=PzG11pbLMza3SCXE" allowfullscreen></iframe>
         </div>
-
 
         <table class="spaceTable">
             <thead>
@@ -289,8 +331,8 @@
             </li>
 
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/SpaceShipsEditor.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/SpaceShipsEditor.webm">
+                    <source type="video/webm">
                 </video>
             </div>
             <li class="bulletPoint">
@@ -306,21 +348,21 @@
                 difficulty as the player progresses.
             </li>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/EB_02.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/EB_02.webm">
+                    <source type="video/webm">
                 </video>
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/EB_01.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/EB_01.webm">
+                    <source type="video/webm">
                 </video>
 
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/EB_03.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/EB_03.webm">
+                    <source type="video/webm">
                 </video>
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/EB_04.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/EB_04.webm">
+                    <source type="video/webm">
                 </video>
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/EB_05.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/EB_05.webm">
+                    <source type="video/webm">
                 </video>
             </div>
             <li class="bulletPoint">
@@ -329,8 +371,8 @@
                 the number of players.
             </li>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/Multiplayer.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Multiplayer.webm">
+                    <source type="video/webm">
                 </video>
             </div>
             <li class="bulletPoint">
@@ -343,14 +385,14 @@
                 fights with new inputs.
 
                 <div class="imagesGrid">
-                    <video class="video-webm" autoplay muted loop>
-                        <source src="Media/MeteoricWars/Astroids_lvl1.webm" type="video/webm">
+                    <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Astroids_lvl1.webm">
+                        <source type="video/webm">
                     </video>
-                    <video class="video-webm" autoplay muted loop>
-                        <source src="Media/MeteoricWars/Astroids_lvl2.webm" type="video/webm">
+                    <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Astroids_lvl2.webm">
+                        <source type="video/webm">
                     </video>
-                    <video class="video-webm" autoplay muted loop>
-                        <source src="Media/MeteoricWars/Astroids_lvl3.webm" type="video/webm">
+                    <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Astroids_lvl3.webm">
+                        <source type="video/webm">
                     </video>
                 </div>
 
@@ -364,8 +406,8 @@
                 low.
 
                 <div class="imagesGrid">
-                    <video class="video-webm" autoplay muted loop>
-                        <source src="Media/MeteoricWars/Drops.webm" type="video/webm">
+                    <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Drops.webm">
+                        <source type="video/webm">
                     </video>
                 </div>
             </li>
@@ -378,19 +420,19 @@
                 collected.
             </p>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/Shop_Interaction.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Shop_Interaction.webm">
+                    <source type="video/webm">
                 </video>
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/ShopMenus.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/ShopMenus.webm">
+                    <source type="video/webm">
                 </video>
 
                 <p class="paragraph-Space">
                     The player can attack the shop. When the shop's HP go down, it enters its aggressive state.
                 </p>
 
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/Shop_FirstLevel.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Shop_FirstLevel.webm">
+                    <source type="video/webm">
                 </video>
 
                 <p class="paragraph-Space">
@@ -398,8 +440,8 @@
                     gets, the more rewards it drops when destroyed.
                 </p>
 
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/Shop_MaxLevel.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Shop_MaxLevel.webm">
+                    <source type="video/webm">
                 </video>
             </div>
 
@@ -411,8 +453,8 @@
                 transform the player, summon companions, launch powerful attacks, and more.
             </li>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/Abilities.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Abilities.webm">
+                    <source type="video/webm">
                 </video>
             </div>
             <li class="bulletPoint">
@@ -421,8 +463,8 @@
                 them.
             </li>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/MeteoricWars/PlayerLevelUp.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/PlayerLevelUp.webm">
+                    <source type="video/webm">
                 </video>
             </div>
         </ul>
@@ -444,9 +486,7 @@
             tool has definitely accelerated my development workflow.
         </p>
         <div class="images-grid">
-            <a href="Media/MeteoricWars/GameEditorWindow.png" data-lightbox="Interaction" data-title="Interaction">
-                <img src="Media/MeteoricWars/GameEditorWindow.png" class="WidowImage" alt="">
-            </a>
+            <img class="overlay-image" data-src="Media/MeteoricWars/GameEditorWindow.png" alt="GameEditor_Screenshot">
         </div>
 
         <p class="panelParagraph paragraph-Space">
@@ -459,9 +499,8 @@
             editor button does all this (except for project file references.)
         </p>
         <div class="images-grid">
-            <a href="Media/MeteoricWars/GameEditorWindow.png" data-lightbox="Interaction" data-title="Interaction">
-                <img src="Media/MeteoricWars/GameManagerEditor.png" class="WidowImage" alt="">
-            </a>
+            <img data-src="Media/MeteoricWars/GameManagerEditor.png" class="overlay-image"
+                 alt="GameManagerCacher_Screenshot">
         </div>
 
 
@@ -482,11 +521,9 @@
             combines into a single texture, and then colors to produce aesthetically nice looking planets.
         </p>
         <div class="images-grid">
-            <a href="Media/MeteoricWars/Planets_SG.png" data-lightbox="Interaction" data-title="Interaction">
-                <img src="Media/MeteoricWars/Planets_SG.png" class="WidowImage" alt="">
-            </a>
-            <video class="video-webm" autoplay muted loop>
-                <source src="Media/MeteoricWars/Planets_Example.webm" type="video/webm">
+            <img data-src="Media/MeteoricWars/Planets_SG.png" class="overlay-image" alt="">
+            <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Planets_Example.webm">
+                <source type="video/webm">
             </video>
         </div>
 
@@ -496,14 +533,12 @@
             values, each rendered using this shader.
         </p>
         <div class="images-grid">
-            <a href="Media/MeteoricWars/NebulaSG.png" data-lightbox="Interaction" data-title="Interaction">
-                <img src="Media/MeteoricWars/NebulaSG.png" class="WidowImage" alt="">
-            </a>
+            <img data-src="Media/MeteoricWars/NebulaSG.png" class="overlay-image" alt="">
             <a href="Media/MeteoricWars/Nebula_Example.png" data-lightbox="Interaction" data-title="Interaction">
-                <img src="Media/MeteoricWars/Nebula_Example.png" class="WidowImage" alt="">
+                <img data-src="Media/MeteoricWars/Nebula_Example.png" class="overlay-image" alt="">
             </a>
             <a href="Media/MeteoricWars/Nebula_Example_01.png" data-lightbox="Interaction" data-title="Interaction">
-                <img src="Media/MeteoricWars/Nebula_Example_01.png" class="WidowImage" alt="">
+                <img data-src="Media/MeteoricWars/Nebula_Example_01.png" class="overlay-image" alt="">
             </a>
         </div>
 
@@ -514,18 +549,15 @@
             the star animations more efficiently.
         </p>
         <div class="images-grid">
-            <a href="Media/MeteoricWars/Stars_SG.png" data-lightbox="Interaction" data-title="Interaction">
-                <img src="Media/MeteoricWars/Stars_SG.png" class="WidowImage" alt="">
-            </a>
-            <a href="Media/MeteoricWars/Stars_Example.png" data-lightbox="Interaction" data-title="Interaction">
-                <img src="Media/MeteoricWars/Stars_Example.png" class="WidowImage" alt="">
-            </a>
+            <img data-src="Media/MeteoricWars/Stars_SG.png" class="overlay-image" alt="">
+            <img data-src="Media/MeteoricWars/Stars_Example.png" class="overlay-image" alt="">
         </div>
 
         <div class="middle-icon-container">
             <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
             <a href="https://github.com/TyRadman/PortfolioCode/tree/99288edda54252b9b0db06500eb81505b807dc33/MeteoricWars"
-               class="link-text" target="_blank">Download source code</a>
+               class="link-text" target="_blank">Download source code
+            </a>
         </div>
     </div>
 
@@ -611,8 +643,8 @@
                 adjust the values when needed.
             </p>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/Tanklike/TankRecoil.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/TankRecoil.webm">
+                    <source type="video/webm">
                 </video>
             </div>
 
@@ -629,10 +661,8 @@
 
             </p>
             <div class="imagesGrid">
-                <a href="Media/Tanklike/LevelGeneration.png" data-lightbox="Interaction"
-                   data-title="Interaction">
-                    <img src="Media/Tanklike/LevelGeneration.png" class="Tanklike_LevelGeneration_ScreenShot" alt="">
-                </a>
+                <img data-src="Media/Tanklike/LevelGeneration.png" class="overlay-image"
+                     alt="Tanklike_LevelGeneration_ScreenShot">
             </div>
 
             <p><b class="paragraph-color-Widow">Local Multiplayer</b>: Tanklike has a multiplayer option that allows
@@ -641,8 +671,8 @@
                 increases in multiplayer mode.
             </p>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/Tanklike/TankRecoil.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/TankRecoil.webm">
+                    <source type="video/webm">
                 </video>
             </div>
 
@@ -651,8 +681,8 @@
                 in the game.
             </p>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/Tanklike/AimAssist.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/AimAssist.webm">
+                    <source type="video/webm">
                 </video>
             </div>
 
@@ -669,8 +699,8 @@
                 It's still far down the project's timeline. But the system's core functionality is working.
             </p>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/Tanklike/SkillTree.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/SkillTree.webm">
+                    <source type="video/webm">
                 </video>
             </div>
 
@@ -703,10 +733,9 @@
                     At all times, the camera keeps the outer boundaries of the room out of view.
                 </li>
             </ul>
-            </p>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/Tanklike/CameraControls.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/CameraControls.webm">
+                    <source type="video/webm">
                 </video>
             </div>
 
@@ -719,8 +748,8 @@
                 application to gameplay scenarios.
             </p>
             <div class="imagesGrid">
-                <video class="video-webm" autoplay muted loop>
-                    <source src="Media/Tanklike/PlayerConstraints.webm" type="video/webm">
+                <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/PlayerConstraints.webm">
+                    <source type="video/webm">
                 </video>
             </div>
 
@@ -787,8 +816,150 @@
         </div>
     </div>
 
+    <!-- Cubarun PANEL -->
+    <div id="cubarunPanel" class="overlayWindow inactive">
+        <h1 id="title-cubarun">Cubarun</h1>
 
-    <iframe src="https://playcanv.as/e/b/a19b36a5"></iframe>
+        <div class="videoContainer">
+            <iframe class="responsive-video" src="https://www.youtube.com/embed/CsiL6ThR-jc?si=WJkJfgyyLXL5vxYa"
+                    allowfullscreen></iframe>
+        </div>
+
+        <table class="table-cubarun">
+            <thead>
+            <tr>
+                <th class="table-head table-head-cubarun">
+                    Role
+                </th>
+                <th class="table-head table-head-cubarun">
+                    Platform
+                </th>
+                <th class="table-head table-head-cubarun">
+                    Tools and technologies
+                </th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <th class="table-item table-item-cubarun ">
+                    Solo Developer
+                </th>
+                <th class="table-item table-item-cubarun">
+                    <div class="imageContainer">
+                        <img src="Media/Icons/pc.svg" class="PlatformIcon">
+                        <p class="PlatformIconName">PC</p>
+                        <img src="Media/Icons/smartphone.svg" class="PlatformIcon">
+                        <p class="PlatformIconName">Mobile</p>
+                    </div>
+                </th>
+                <th class="table-item table-item-cubarun">
+                    Unity, Adobe Photoshop, Blender
+                </th>
+            </tr>
+            </tbody>
+        </table>
+
+        <p class="paragraph-Widow panelParagraph">
+            Cubarun was my gateway to game development. I followed a tutorial made by the amazing Brackeys, and learnt a
+            lot about Unity along the way.
+            After I was done with the simple game introduced in the tutorial, I decided to take it a bit further. I
+            managed to implement a lot of fun systems for the first time in my life.<br/>
+            And that was the beginning of a journey that is still ongoing.
+        </p>
+
+        <p class="panelSmallTitle smallTitle-Widow">
+            Concept
+        </p>
+
+        <p class="paragraph-Widow panelParagraph">
+            Cubarun is an endless runner game where the player controls a cube with special abilities to collect coins
+            and get as far down the cubes world as they can.<br/>
+            The player can collect coins along the way with which they can buy new cubes with new powers to be able to
+            get further into the endless level.<br/>
+            I implemented a lot of systems in this game. And while the project was architectured by undergrad me,
+            I was amazed that the whole thing worked together still without the need to fix any bugs. After all, this
+            project is 4 years old by now.
+        </p>
+
+        <ul class="paragraph-Widow panelParagraph">
+            <p><b class="paragraph-color-Widow">Level Generation</b>: To achieve the endless runner dynamic in Cubarun,
+                I developed a random level generation system that dynamically constructs the game environment as the
+                player progresses.
+                This system operates by monitoring the player's position, adding new tiles ahead of the player and
+                removing old ones from behind to maintain continuous gameplay without loading interruptions.
+                Each tile is selected based on a set of probabilities that determine which tiles are likely to follow.
+                To enhance variety and prevent repetition, the system tracks previously chosen tiles and adjusts their
+                spawn likelihood.
+                As the player advances, the difficulty of the level increases by either increasing the likelihood of
+                spawning more difficult tiles to cross or by increasing the difficulty of a chosen tile. For instance, a
+                tile that has a spinning laser beam will have the laser spin even faster.
+            </p>
+            <div class="imagesGrid">
+                <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_Maneuver.webm">
+                    <source type="video/webm">
+                </video>
+                <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_LaserEvasion.webm">
+                    <source type="video/webm">
+                </video>
+                <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_LaserDeath.webm">
+                    <source type="video/webm">
+                </video>
+                <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_HitDeath.webm">
+                    <source type="video/webm">
+                </video>
+            </div>
+
+            <p><b class="paragraph-color-Widow">Player Selection Menu</b>:
+                I designed and implemented a simple player selection menu in that allows players to choose and purchase
+                cubes,
+                each featuring unique abilities.
+                This system not only provides a choice of characters but also adds depth to the gameplay through special
+                abilities that enhance player strategy.
+                In addition to the abilities, all cubes have the ability to speed up or slow down, providing crucial
+                gameplay mechanics that players can use tactically to navigate through increasingly difficult levels.
+            </p>
+            <div class="imagesGrid">
+                <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_Shop.webm">
+                    <source type="video/webm">
+                </video>
+                <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_StartGame.webm">
+                    <source type="video/webm">
+                </video>
+                <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_SlowMotion.webm">
+                    <source type="video/webm">
+                </video>
+                <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_MetalAbility.webm">
+                    <source type="video/webm">
+                </video>
+                <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_SlowDown.webm">
+                    <source type="video/webm">
+                </video>
+            </div>
+
+        </ul>
+
+        <div class="middle-icon-container">
+            <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+            <a href="https://github.com/TyRadman/PortfolioCode/tree/cc96844c4c03f60645320b43a6976d5be80c2dd9/Cubarun"
+               class="link-text" target="_blank">Download source code</a>
+        </div>
+    </div>
+
+    <!-- VR -->
+    <div id="metroVancouverPanel" class="overlayWindow inactive">
+        <h1 class="project-title">MetroVancouver VR Project</h1>
+
+        <div class="videoContainer">
+            <iframe class="responsive-video" src="https://www.youtube.com/embed/bVq_YHCvwGM?si=XzZ9mROoHqf5KwIr"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="middle-icon-container">
+            <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+            <a href="https://github.com/TyRadman/PortfolioCode/tree/cc96844c4c03f60645320b43a6976d5be80c2dd9/Cubarun"
+               class="link-text" target="_blank">Download source code</a>
+        </div>
+    </div>
 
 </div>
 

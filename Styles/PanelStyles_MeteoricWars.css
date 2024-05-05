@@ -1,9 +1,8 @@
 :root {
   --textColor: #b5c7b6;
-  /* --mainColor: #6a9394; */
-  --mainColor: #5c7680;
-  /* --mainColor: #555f73; */
+  --mainColor: #59b3cf;
   --BGColor: #131014;
+  --BGColor-2: #847987;
 }
 
 .title-space{
@@ -12,8 +11,13 @@
 
 #spacePanel {
   display: block;
-  background-color: var(--BGColor);
-  /*padding: 20px;*/
+  /*background-color: var(--BGColor);*/
+  /*background: linear-gradient(to bottom, var(--BGColor), var(--BGColor-2));*/
+  background: linear-gradient(270deg, #050011, #0b0417, #10081c, #130d21, #151026, #17132c, #1a1531, #1d1737);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: auto;
   z-index: 100;
   height: fit-content;
 }
@@ -38,7 +42,7 @@
     transform: translateX(-100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(20%);
   }
 }
 
@@ -49,7 +53,7 @@
 
 @keyframes slideOutFromRight {
   from {
-    transform: translateX(0);
+    transform: translateX(20%);
   }
   to {
     transform: translateX(-100%);

@@ -1,0 +1,35 @@
+
+#metroVancouverPanel{
+  display: block;
+  background-color: var(--BGColor);
+  /*padding: 20px;*/
+  z-index: 100;
+  height: fit-content;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#metroVancouverPanel.active {
+  display: block;
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+@keyframes slideOutFromRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#metroVancouverPanel.inactive {
+  animation: slideOutFromRight 0.5s ease-out forwards;
+}

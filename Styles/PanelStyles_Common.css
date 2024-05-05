@@ -1,0 +1,7 @@
+.project-title {
+  color: var(--mainColor-widow);
+  font-family: 'Lodrina_Black';
+  letter-spacing: 4px;
+  font-size: 80px;
+  text-align: center;
+}

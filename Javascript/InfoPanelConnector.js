@@ -1,5 +1,6 @@
 const activeTag = 'active';
 const inactiveTag = 'inactive';
+const blurBackgroundID = 'blur-backgroud';
 
 window.addEventListener("message", function(event) {    
   console.log("Message received:", event.data);
@@ -14,10 +15,14 @@ function openOverlay(panelName) {
   // enable the panel
   document.getElementById(panelName).classList.remove(inactiveTag);//.classname = '';
   document.getElementById(panelName).classList.add(activeTag);
+  // the blur effect
+  document.getElementById(blurBackgroundID).classList.remove(inactiveTag);
+  document.getElementById(blurBackgroundID).classList.add(activeTag);
 }
 
 window.addEventListener("message", function(event) {
-  if (event.data.message == 'close') {
+  if (event.data.message == 'close')
+  {
     console.log(event.data.message);
     closeOverlay(event.data.panelName);
   }
@@ -27,4 +32,7 @@ function closeOverlay(panelName){
   // document.getElementById(panelName).className = '';
   document.getElementById(panelName).classList.remove(activeTag);
   document.getElementById(panelName).classList.add(inactiveTag);
+  // the blur effect
+  document.getElementById(blurBackgroundID).classList.remove(activeTag);
+  document.getElementById(blurBackgroundID).classList.add(inactiveTag);
 }
