@@ -1,35 +1,40 @@
+:root {
+  --textColor-vr: #b5c7b6;
+  --mainColor-vr: #59b3cf;
+  --BGColor-vr: #060a22;
+}
 
 #metroVancouverPanel{
-  display: block;
-  background-color: var(--BGColor);
-  /*padding: 20px;*/
-  z-index: 100;
-  height: fit-content;
 }
 
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-120%);
-  }
-  to {
-    transform: translateX(0);
-  }
+.color-vr{
+  color: var(--mainColor-vr);
 }
 
-#metroVancouverPanel.active {
-  display: block;
-  animation: slideInFromLeft 0.5s ease-out forwards;
+.paragraph-vr{
+  color: var(--textColor-vr);
 }
 
-@keyframes slideOutFromRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-120%);
-  }
+.table-head-vr
+{
+  border: 3px solid var(--mainColor-vr);
+  color: var(--mainColor-vr);
 }
 
-#metroVancouverPanel.inactive {
-  animation: slideOutFromRight 0.5s ease-out forwards;
+.table-item-vr
+{
+  color: var(--textColor);
+  border: 3px solid var(--mainColor-vr);
+}
+
+.vr-title-transition{
+  background-image: url("Waves/Transition_MeteoricWars_01.svg");
+}
+
+.vr-content-transition{
+  background-image: url("Waves/Transition_MeteoricWars_02.svg");
+}
+
+.vr-main-section{
+  background-color: var(--BGColor-vr);
 }

@@ -1,112 +1,40 @@
 :root {
   --textColor: #b5c7b6;
-  --mainColor: #59b3cf;
-  --BGColor: #131014;
-  --BGColor-2: #847987;
-}
-
-.title-space{
-  color: var(--mainColor);
+  --mainColor-MeteoricWars: #59b3cf;
+  --BGColor-metoericWars: #060a22;
 }
 
 #spacePanel {
-  display: block;
-  /*background-color: var(--BGColor);*/
-  /*background: linear-gradient(to bottom, var(--BGColor), var(--BGColor-2));*/
-  background: linear-gradient(270deg, #050011, #0b0417, #10081c, #130d21, #151026, #17132c, #1a1531, #1d1737);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: auto;
-  z-index: 100;
-  height: fit-content;
 }
 
-.smallTitle-space{
-  color: var(--mainColor);
+.color-meteoric-wars{
+  color: var(--mainColor-MeteoricWars);
 }
 
 .paragraph-Space{
   color: var(--textColor);
-  letter-spacing: 4px;
 }
 
-.paragraph-color-Space{
-  color: var(--mainColor);
-}
-
-
-/* //////////INFO PANEL OVERLAY////////////// */
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-120%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-
-#spacePanel.active {
-  display: block;
-  animation: slideInFromLeft 0.5s ease-out forwards;
-}
-
-@keyframes slideOutFromRight {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-120%);
-  }
-}
-
-#spacePanel.inactive {
-  animation: slideOutFromRight 0.5s ease-out forwards;
-}
-
-.spaceImage{
-  margin-bottom: 2%;
-
-}
-
-/* Table */
-.spaceTable{
-  width: 80%;
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-  table-layout: fixed;
-  padding-top: 5%;
-}
-
-.spaceTableHead
+.table-head-meteoric-wars
 {
-  border: 3px solid var(--mainColor);
-  color: var(--mainColor);
+  border: 3px solid var(--mainColor-MeteoricWars);
+  color: var(--mainColor-MeteoricWars);
 }
 
-.spaceTableItem
+.table-item-meteoric-wars
 {
   color: var(--textColor);
-  border: 3px solid var(--mainColor);
+  border: 3px solid var(--mainColor-MeteoricWars);
 }
 
-.spaceTableItem .PlatformIcon{
-  width: 25%;
-  height:  25%;
-  text-align: center;
-  vertical-align: middle;
+.meteoric-wars-title-transition{
+  background-image: url("Waves/Transition_MeteoricWars_01.svg");
 }
 
-.imageContainer {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; 
+.meteoric-wars-content-transition{
+  background-image: url("Waves/Transition_MeteoricWars_02.svg");
 }
 
-.PlatformIconName{
-  margin-left: 5%;
-  margin-right: 5%;
+.meteoric-wars-main-section{
+  background-color: var(--BGColor-metoericWars);
 }

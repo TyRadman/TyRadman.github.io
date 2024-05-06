@@ -1,88 +1,18 @@
 :root {
   --textColor-cubarun: white;
   --mainColor-cubarun: #21c7dd;
-  --BGColor-cubarun: #111317;
+  --BGColor-cubarun: #060a22;
 }
-/*https://lospec.com/palette-list/tag/scifi*/
 
 #cubarunPanel {
-  display: block;
-  background-color: var(--BGColor-widow);
-  padding: 20px;
-  z-index: 100;
-  height: fit-content;
 }
 
-
-/*Text*/
-#title-cubarun{
-  color: var(--mainColor-cubarun);
-  font-family:'Lodrina_Black';
-  letter-spacing: 4px;
-  font-size: 80px;
-  text-align: center;
-}
-
-.small-title-cubarun{
+.color-cubarun{
   color: var(--mainColor-cubarun);
 }
 
 .paragraph-cubarun{
   color: var(--textColor-cubarun);
-  letter-spacing: 4px;
-}
-
-.paragraph-color-cubarun{
-  color: var(--mainColor-cubarun);
-}
-
-.panel-paragraph-cubarun{
-  color: var(--mainColor-cubarun);
-  letter-spacing: 4px;
-}
-
-
-/* //////////INFO PANEL OVERLAY////////////// */
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-120%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-#cubarunPanel.active {
-  display: block;
-  animation: slideInFromLeft 0.5s ease-out forwards;
-}
-
-@keyframes slideOutFromRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-120%);
-  }
-}
-
-#cubarunPanel.inactive {
-  animation: slideOutFromRight 0.5s ease-out forwards;
-}
-
-.image-cubarun{
-  margin-bottom: 2%;
-
-}
-
-/* Table */
-.table-cubarun{
-  width: 80%;
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-  table-layout: fixed;
-  padding-top: 5%;
 }
 
 .table-head-cubarun
@@ -93,6 +23,18 @@
 
 .table-item-cubarun
 {
-    color: var(--textColor-cubarun);
-    border: 3px solid var(--mainColor-cubarun);
+  color: var(--textColor);
+  border: 3px solid var(--mainColor-cubarun);
+}
+
+.cubarun-title-transition{
+  background-image: url("Waves/Transition_MeteoricWars_01.svg");
+}
+
+.cubarun-content-transition{
+  background-image: url("Waves/Transition_MeteoricWars_02.svg");
+}
+
+.cubarun-main-section{
+  background-color: var(--BGColor-cubarun);
 }
