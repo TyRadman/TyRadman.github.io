@@ -73,7 +73,6 @@
   align-items: center;
   flex-direction: column; /* Stack children vertically */
   z-index: 1000; /* Ensure it's above everything */
-  /*background-color: var(--bgColor);*/
   background-color: var(--playcanvas-cover);
   backdrop-filter: blur(10px);  /* Apply a blur effect to the background */
   -webkit-backdrop-filter: blur(10px);

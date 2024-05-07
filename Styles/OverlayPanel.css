@@ -96,11 +96,9 @@
 .panelSmallTitle{
   text-align: justify;
   text-align-last: center;
-
   padding-top: 20px;
   padding-left: 10%;
   padding-right: 10%;
-
   font-family: 'Lodrina_Regular';
   font-size: 45px;
 }
@@ -261,8 +259,9 @@
 }
 
 #blur-backgroud{
-  width: 100%;
-  height: 100%;
+  /* because it doesn't quite cover the entirety of the screen for some effing reason*/
+  width: 150vw;
+  height: 150vh;
   overflow: auto;
   position: fixed;
   z-index: 2;
