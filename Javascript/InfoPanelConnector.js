@@ -13,8 +13,11 @@ window.addEventListener("message", function(event) {
 
 function openOverlay(panelName) {
   // enable the panel
-  document.getElementById(panelName).classList.remove(inactiveTag);//.classname = '';
-  document.getElementById(panelName).classList.add(activeTag);
+  let panelTopOpen = document.getElementById(panelName);
+  // panelTopOpen.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  panelTopOpen.classList.remove(inactiveTag);//.classname = '';
+  panelTopOpen.classList.add(activeTag);
   // the blur effect
   document.getElementById(blurBackgroundID).classList.remove(inactiveTag);
   document.getElementById(blurBackgroundID).classList.add(activeTag);

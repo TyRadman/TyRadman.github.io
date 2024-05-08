@@ -23,7 +23,7 @@
 
 .table-item-tanklike
 {
-  color: var(--textColor);
+  color: var(--textcolor-tanklike);
   border: 3px solid var(--mainColor-tanklike);
 }
 

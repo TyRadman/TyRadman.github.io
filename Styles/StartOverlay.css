@@ -1,6 +1,5 @@
 :root{
   --bgColor: #050505;
-  /*--bgColor: #030202;*/
   --playcanvas-cover: rgba(0, 0, 0, 0.2);
 }
 
@@ -39,7 +38,7 @@
 
 .start-title-text{
   color: var(--mainColor-widow);
-  font-family:'Lodrina_Black';
+  font-family:'Lodrina_Black', "Roboto Black";
   /*letter-spacing: 4px;*/
   letter-spacing: 0.2rem;
   font-size: 2rem;
@@ -56,7 +55,7 @@
 
 .Introduction-text {
   color: white;
-  font-family:'Lodrina_Black';
+  font-family:'Lodrina_Black', "Roboto Medium";
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
   text-align: left;
@@ -119,7 +118,7 @@
   flex-direction: column;
   align-items: center; /*if set to strech, it would space them out as hard as possible*/
   width: 100%;
-  font-family: 'Lodrina_Regular';
+  font-family: 'Lodrina_Regular', "Roboto Medium";
   border-radius: 1vw;
   border: 4px solid #dd2221;
   background-color: transparent;
@@ -166,7 +165,7 @@
 
 .start-footer {
   color: var(--mainColor-widow);
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium", "Roboto Medium";
   letter-spacing: 0.2rem;
   font-size: 1rem;
   text-align: center;
