@@ -196,7 +196,7 @@
 .table-head{
   padding: 2%;
   text-align: left;
-  font-family:'Lodrina_Black';
+  font-family:'Lodrina_Black', "Roboto Black";
   font-size: 30px;
   letter-spacing: 2px;
 }
@@ -205,7 +205,7 @@
 {
     padding: 2%;
     text-align: left;
-    font-family:'Lodrina_Black';
+    font-family:'Lodrina_Black', "Roboto Black";
     font-size: 25px;
     letter-spacing: 3px;
 }
@@ -251,7 +251,7 @@
   text-align: justify;
   text-align-last: left;
   color: white;
-  font-family: 'Lodrina_Light';
+  font-family: 'Lodrina_Light', "Roboto Light";
   overflow: auto;
   font-size: 300%;
   text-decoration: underline;
