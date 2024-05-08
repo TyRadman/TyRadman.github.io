@@ -85,7 +85,7 @@
 
 /* Text*/
 .title{
-  font-family:'Lodrina_Black';
+  font-family: Lodrina_Black, "Roboto Black";
   letter-spacing: 4px;
   font-size: 80px;
   text-align: center;
@@ -93,13 +93,13 @@
   padding-top: 5vh;
 }
 
-.panelSmallTitle{
+.panel-small-title{
   text-align: justify;
   text-align-last: center;
   padding-top: 20px;
   padding-left: 10%;
   padding-right: 10%;
-  font-family: 'Lodrina_Regular';
+  font-family: Lodrina_Regular, "Roboto Medium";
   font-size: 45px;
 }
 
@@ -111,7 +111,7 @@
   padding-left: 10%;
   padding-right: 10%;
   line-height: 1.5;
-  font-family: 'Lodrina_Light';
+  font-family: Lodrina_Light, "Roboto Light";
   font-size: 1.5rem;
   letter-spacing: 4px;
 }

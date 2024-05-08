@@ -13,7 +13,6 @@
   src: url('fonts/RobotoSlab-Regular.ttf');
 }
 
-/* Lodrina */
 @font-face {
   font-family: "Lodrina_Black";
   src: url('fonts/Londrina/LondrinaSolid-Black.ttf');
@@ -27,5 +26,3 @@
   font-family: "Lodrina_Light";
   src: url('Fonts/Londrina/LondrinaSolid-Light.ttf');
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
