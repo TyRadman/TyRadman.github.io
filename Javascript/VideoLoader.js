@@ -51,14 +51,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting)
+      {
         const img = entry.target;
         const imgSource = img.getAttribute('data-src');
-        if (imgSource && !img.src) {
+
+        if (imgSource && !img.src)
+        {
           img.src = imgSource;  // Set the actual image source from 'data-src'
           img.onload = () => {
             img.classList.add('loaded');
           };
+        }
+
+        if(img.src)
+        {
+          if (!img.classList.contains('loaded')) {
+            img.classList.add('loaded');
+          }
         }
       }
     });
