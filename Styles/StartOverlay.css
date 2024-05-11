@@ -29,7 +29,7 @@
 
 .start-name-text{
   color: var(--mainColor-widow);
-  font-family:'Lodrina_Black';
+  font-family:'Lodrina_Black', "Roboto Black";
   letter-spacing: 0.2rem;
   font-size: 4rem;
   text-align: center;
