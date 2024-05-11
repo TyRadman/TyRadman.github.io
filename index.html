@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="page-container">
-    <iframe src="https://playcanv.as/e/b/79b4b08c" class="playcanvas-content"></iframe>
+    <iframe src="https://playcanv.as/e/b/6eede869" class="playcanvas-content"></iframe>
 
     <div id="initial-overlay">
         <div class="start-content-container">
@@ -1191,7 +1191,7 @@
                     I'd like to highlight a couple of systems that I worked on in this project:
                 </p>
 
-                <p class="paragraph-Space panel-paragraph"><b class="color-vr">ArcGIS Map</b>: One of the client's expectations of my team was integrating ArcGIS into the app.
+                <p class="paragraph-vr panel-paragraph"><b class="color-vr">ArcGIS Map</b>: One of the client's expectations of my team was integrating ArcGIS into the app.
                     I used the SDK Esri provides for Unity to render the map in VR which was one of the big tasks that slowed down my process as it set a lot of
                     limitations to the Camera and controls in both Game and Edit mode in Unity.
                     I eventually managed to get it to work with both by slightly modifying a script provided by the SDK and drastically changing the hierarchical structure of the project.
@@ -1201,6 +1201,108 @@
                 <div class="imagesGrid">
                     <video autoplay muted loop class="video-webm" data-src="Media/VR/VR_ArcGISMap.webm">
                         <source type="video/webm">
+                    </video>
+                </div>
+
+                <div class="middle-icon-container">
+                    <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+                    <a href="https://github.com/TyRadman/PortfolioCode/tree/99288edda54252b9b0db06500eb81505b807dc33/MeteoricWars"
+                       class="link-text" target="_blank">Download source code
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Battle City -->
+    <div id="battleCityPanel" class="project-panel inactive">
+        <div class="project-panel-container">
+            <section class="vr-main-section">
+                <h1 class="color-vr title">MetroVancouver VR Project</h1>
+            </section>
+
+            <div class="transition-spacer vr-title-transition"></div>
+
+            <section class="middle-gray">
+                <div class="videoContainer">
+                    <iframe class="responsive-video" src="https://www.youtube.com/embed/oOmojSylfLg?si=Z-ruw3gY14tiJ72T"
+                            allowfullscreen></iframe>
+                </div>
+                <table class="project-table">
+                    <thead>
+                    <tr>
+                        <th class="table-head table-head-vr">
+                            Role
+                        </th>
+                        <th class="table-head table-head-vr">
+                            Platform
+                        </th>
+                        <th class="table-head table-head-vr">
+                            Tools and technologies
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <th class="table-item table-item-vr">
+                            Developer
+                        </th>
+                        <th class="table-item table-item-vr">
+                            <div class="imageContainer">
+                                <img src="Media/Icons/pc.svg" class="platform-icon">
+                                <p class="platform-name">PC</p>
+                            </div>
+                        </th>
+                        <th class="table-item table-item-vr">
+                            Unity, Blender, Photoshop, Github
+                        </th>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="transition-spacer vr-content-transition"></div>
+
+            <section class="vr-main-section">
+                <p class="panel-paragraph paragraph-vr">
+                    A close friend of mine and I decided to remake the game in 3D as a part of our learning journey and love for old-school games.
+                    We recreated the entire Battle City game in 3D in Unity in less than a month, using Blender to build our models and textures, and collaborating remotely.
+                    Battle City is a multi-directional shooter video game for the Family Computer produced and published in 1985 by Namco for Nintendo family computer (AKA Famicom.)
+                    This project is 3D remake of the original game that was done for fun.
+                </p>
+
+                <p class="panel-small-title color-vr">
+                    Concept
+                </p>
+
+                <p class="panel-paragraph paragraph-vr">
+                    Battle City is a multi-directional shooter video game for the Family Computer produced and published in 1985 by Namco for Nintendo family computer (AKA Famicom.)
+                    This project is 3D remake of the original game that was done for fun.
+                </p>
+
+                <p class="panel-small-title color-vr">
+                    Contribution
+                </p>
+
+                <p class="paragraph-vr panel-paragraph">
+                    In my 3D remake of Battle City, I enhanced efficiency by automating level and enemy creation.
+                    Instead of manually assembling levels, I developed a script that interprets a 13x13 grid of characters that act as tiles
+                    (the size of the map in the original game was 13*13.) Each character represents a specific tile type, like 'w' for water and ‘g’ for grass.
+                    The script similarly automates enemy deployment by processing sequences of 20 numbers, each indicating an enemy type, to populate each level.
+                    <br/>
+                    I added extra features to add more to the experience, such as a camera shake that ranges in strength based on the event,
+                    a camera follow feature that takes away the dullness of only seeing the tanks move and post-processing effects to make the environment more interesting.
+                    <br/>
+                    In addition to that, I was responsible for implementing the player’s movement and interactions,
+                    the enemies’ AI that matched the original game’s enemies AI, level generation, local multiplayer, UI, post-processing and some modelling, and the power-ups.
+
+                </p>
+
+                <div class="imagesGrid">
+                    <video autoplay muted loop class="video-webm">
+                        <source src="Media/BattleCity/GameplayWithExplosion.webm" type="video/webm">
                     </video>
                 </div>
 
