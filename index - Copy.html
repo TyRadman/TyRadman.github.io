@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ty - Portfolio</title>
+    <link rel="stylesheet" href="Styles/Fonts.css">
+    <link rel="stylesheet" href="Styles/MainPage.css">
+    <link rel="stylesheet" href="Styles/OverlayPanel.css">
+    <link rel="stylesheet" href="Styles/StartOverlay.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_TheWidow.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_MeteoricWars.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_Tanklike.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_Cubarun.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_Common.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_MetroVancouver.css">
+    <link rel="stylesheet" href="Styles/PlayCanvas.css">
+    <!-- External JavaScript file -->
+    <script src="Javascript/InfoPanelConnector.js"></script>
+    <script src="Javascript/StartOverlay.js"></script>
+    <script src="Javascript/VideoLoader.js"></script>
+</head>
+<body>
+<div class="page-container">
+    <iframe src="https://playcanv.as/e/b/6eede869" class="playcanvas-content"></iframe>
+
+    <div id="initial-overlay">
+        <div class="start-content-container">
+            <div class="start-text-container">
+                <p class="start-name-text">
+                    Ty Radman
+                </p>
+                <p class="start-title-text">
+                    Game Developer / Designer
+                </p>
+
+                <p class="Introduction-text">
+                    Hello there, Adventurer! <br/> My name is Ty, and I'm deeply passionate about game design and
+                    development. A self-taught developer,
+                    I’ve been honing my skills for nearly four years, with several games in development, including an
+                    upcoming roguelike title.
+                    <br/><br/>
+                    After completing my Information Technology degree in 2021, I began pursuing a Master of Digital
+                    Media.
+                    I have experience as a graphic designer and was involved in a YouTube channel where we shared
+                    tutorials on remaking classic games with modern visuals and mechanics, though this project is
+                    currently on hold due to my studies.
+                    <br/><br/>
+                    I primarily use Unity for my projects and am expanding my skills into Unreal Engine to refine my
+                    C++.
+                    I look forward to your feedback and hope you enjoy exploring my work!
+                </p>
+                <p class="title color-widow">Here is a title</p>
+                <p class="panel-small-title color-widow">Here is a small title</p>
+                <p class="panel-paragraph color-widow">Here is a paragraph</p>
+            </div>
+            <div class="mainMenuButtonsContainer">
+                <button id="startButton" class="menuButton startButton"><p>Start Game</p>
+                    <p class="little-text">HIGHLY RECOMMENDED! But only if you're on a computer</p></button>
+                <button id="websiteButton" class="menuButton websiteButton"><p>Continue to Phone Site</p>
+                    <p class="little-text">For mobile device users</p>
+                </button>
+            </div>
+
+            <div class="start-text-container">
+                <p class="start-footer">
+                    © 2024 by Ty Radman. All rights reserved. V.0.5
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="blur-backgroud" class="inactive">
+    </div>
+
+    <!-- WIDOW PANEL -->
+    <div id="widowPanel" class="project-panel inactive">
+        <div class="project-panel-container">
+            <section class="the-widow-main-section">
+                <h1 class="color-widow title">The Widow</h1>
+            </section>
+
+            <div class="transition-spacer the-widow-title-transition"></div>
+
+            <section class="middle-gray">
+                <div class="videoContainer">
+                    <iframe class="responsive-video" src="https://www.youtube.com/embed/CsiL6ThR-jc?si=WJkJfgyyLXL5vxYa"
+                            allowfullscreen></iframe>
+                </div>
+                <table class="project-table">
+                    <thead>
+                    <tr>
+                        <th class="table-head table-head-widow">
+                            Role
+                        </th>
+                        <th class="table-head table-head-widow">
+                            Platform
+                        </th>
+                        <th class="table-head table-head-widow">
+                            Tools and technologies
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <th class="table-item table-item-widow ">
+                            Solo developer
+                        </th>
+                        <th class="table-item table-item-widow">
+                            <div class="imageContainer">
+                                <img src="Media/Icons/pc.svg" class="platform-icon">
+                                <p class="platform-name">PC</p>
+                            </div>
+                        </th>
+                        <th class="table-item table-item-widow">
+                            Unity, Adobe Audition, Adobe Photoshop, Adobe Substance Painter, Blender
+                        </th>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="transition-spacer the-widow-content-transition"></div>
+
+            <section class="the-widow-main-section">
+                <p class="paragraph-Widow panel-paragraph">
+                    The Widow is my first personal big project that I started working on part-time in 2020 until the end
+                    of
+                    2021. The inspiration to work on this project was out of my love for the survival horror genre and
+                    was
+                    an
+                    opportunity for me to learn more about Unity by implementing interconnected game systems that worked
+                    together with the player character and the enemy’s AI.
+
+                    I had plans on releasing the game, but realized I’d need more assets than I was able to provide, so
+                    I
+                    stopped working on it when the game got to full playable state.
+                </p>
+
+                <p class="panel-small-title color-widow">
+                    Concept
+                </p>
+
+                <p class="paragraph-Widow panel-paragraph">
+                    The Widow is a first-person survival horror game where the player, a detective, investigates the
+                    mysterious
+                    death of a woman named Ms. Romanov, only to find themselves trapped in the house, and haunted by an
+                    unknown
+                    presence.
+                </p>
+
+                <p class="panel-small-title color-widow">
+                    Game Systems
+                </p>
+
+                <p class="paragraph-Widow panel-paragraph">
+                    "The Widow" was my chance to implement a couple of systems, some of which are:
+                </p>
+
+                <ul class="paragraph-Widow panel-paragraph">
+                    <li class="bulletPoint ">
+                        <b class="color-widow">Player Interaction System</b>: Allows the player to interact with
+                        predetermined interactables, including doors, collectibles, and puzzles.
+                    </li>
+
+                    <div class="imagesGrid">
+                            <img data-src="Media/TheWidow/TheWidow_PuzzleInteraction_Closed.png" class="overlay-image" alt="Puzzle_Interaction_Screenshot">
+                            <img data-src="Media/TheWidow/TheWidow_Letter.png" class="overlay-image" alt="Puzzle_Interaction_Screenshot">
+                    </div>
+                    <li class="bulletPoint">
+                        <b class="color-widow">Camera Effects System</b>: Features dynamic camera effects that respond
+                        to the player’s state. For example, the view gets distorted when the player runs out of stamina,
+                        and
+                        the
+                        camera’s focus changes based on what object the player is looking at.
+                    </li>
+                    <div class="imagesGrid">
+                            <img data-src="Media/TheWidow/TheWidow_BlurEffect.gif" class="overlay-image" alt="Blur_Effect_Screenshot">
+                            <img data-src="Media/TheWidow/TheWidow_SprintEffect.gif" class="overlay-image" alt="Sprint_Effect_Screenshot">
+                    </div>
+                    <li class="bulletPoint">
+                        <b class="color-widow">Puzzles</b>: Include puzzles with random solutions that challenge
+                        players to think every time they solve them. For instance, the piano puzzle, which is solved by
+                        playing
+                        a certain combination of keys, has a unique solution in every run, and the solution is embedded
+                        in a
+                        different note that the player finds before coming across the puzzle.
+                    </li>
+                    <div class="imagesGrid">
+                            <img data-src="Media/TheWidow/TheWidow_Puzzle.gif" class="overlay-image" alt="">
+                    </div>
+                    <li class="bulletPoint">
+                        <b class="color-widow">Dialogue and Tips</b>: A dialogue system adds a narrative to the game,
+                        and a tips display system teaches players how to interact with the game.
+                    </li>
+                    <div class="imagesGrid">
+                            <img data-src="Media/TheWidow/TheWidow_FlashlightTip.gif" class="overlay-image" alt="">
+                    </div>
+                    <li class="bulletPoint">
+                        <b class="color-widow">Enemy AI</b>: The entity chasing the player uses a finite state machine
+                        to look for and hunt down the player. It has a line of sight as well as the ability to hear the
+                        player,
+                        depending on the player's movements. The slower the player moves, the less likely it is for the
+                        enemy to
+                        hear them.
+                    </li>
+                    <li class="bulletPoint">
+                        <b class="color-widow">Hide Spots</b>: Some spots can render the player invisible if the
+                        entity didn’t see the player hide there.
+                    </li>
+                    <li class="bulletPoint">
+                        <b class="color-widow">Inventory System</b>: The player can collect and use items in the
+                        inventory. Items range from a flashlight and batteries to keys, energy drinks, puzzle pieces,
+                        and
+                        more.
+                    </li>
+                    <div class="imagesGrid">
+                            <img data-src="Media/TheWidow/TheWidow_Inventory.png" class="overlay-image" alt="">
+                    </div>
+                    <li class="bulletPoint">
+                        <b class="color-widow">Jump-scares System</b>: Before the player encounters the entity, random
+                        jump-scares might occur in certain areas, with the entity either passing by or staring at the
+                        player
+                        from a distance before walking away.
+                    </li>
+                    <div class="imagesGrid">
+                            <img data-src="Media/TheWidow/TheWidow_Jumpscare.gif" class="overlay-image" alt="">
+                    </div>
+                    <li class="bulletPoint">
+                        <b class="color-widow">Start and End Menu</b>: Includes settings for brightness and audio
+                        volume.
+                    </li>
+                    <div class="imagesGrid">
+                            <img data-src="Media/TheWidow/Widow_Settings.png" class="overlay-image" alt="">
+                            <img data-src="Media/TheWidow/TheWidow_MainMenu.png" class="overlay-image" alt="">
+                    </div>
+
+                    <li class="bulletPoint">
+                        <b class="color-widow">Audio Management</b>: A system that adds transitions to the music being
+                        played in the background depending on the situation.
+                    </li>
+                    <li class="bulletPoint">
+                        <b class="color-widow">Item Spawning</b>: Collectibles are spawned randomly and are
+                        semi-equally distributed across the level.
+                    </li>
+                </ul>
+
+                <div class="middle-icon-container">
+                    <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+                    <a href="https://github.com/TyRadman/PortfolioCode/tree/59c305fc42dc3758b17a353fc7e66037eb34e3a9/TheWidow"
+                       class="link-text" target="_blank">Download source code</a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- METEORIC WARS PANEL -->
+    <div id="spacePanel" class="project-panel inactive">
+        <div class="project-panel-container">
+            <section class="meteoric-wars-main-section">
+                <h1 class="color-meteoric-wars title">Meteoric Wars</h1>
+            </section>
+
+            <div class="transition-spacer meteoric-wars-title-transition"></div>
+
+            <section class="middle-gray">
+                <div class="videoContainer">
+                    <iframe class="responsive-video" src="https://www.youtube.com/embed/Pb-3FAy7LIk?si=PzG11pbLMza3SCXE"
+                            allowfullscreen></iframe>
+                </div>
+                <table class="project-table">
+                    <thead>
+                    <tr>
+                        <th class="table-head table-head-meteoric-wars">
+                            Role
+                        </th>
+                        <th class="table-head table-head-meteoric-wars">
+                            Platform
+                        </th>
+                        <th class="table-head table-head-meteoric-wars">
+                            Tools and technologies
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <th class="table-item table-item-meteoric-wars">
+                            Solo developer
+                        </th>
+                        <th class="table-item table-item-meteoric-wars">
+                            <div class="imageContainer">
+                                <img src="Media/Icons/pc.svg" class="platform-icon" alt="">
+                                <p class="platform-name">PC</p>
+                            </div>
+                        </th>
+                        <th class="table-item table-item-meteoric-wars">
+                            Unity, Adobe Photoshop, Pixel Studio, Bfxr (sound effects generator)
+                        </th>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="transition-spacer meteoric-wars-content-transition"></div>
+
+            <section class="meteoric-wars-main-section">
+                <p class="panel-paragraph paragraph-Space">
+                    Meteoric Wars was my first attempt to work on a rogue-like game. The idea was inspired by Sonic
+                    Wings (a
+                    game I played a lot when I was young) mixed with my love for pixel art and rogue-like games even
+                    though the
+                    latter wasn’t a part of the plan initially.
+                </p>
+
+                <p class="panel-small-title color-meteoric-wars">
+                    Concept
+                </p>
+
+                <p class="paragraph-Space panel-paragraph">
+                    Meteoric Wars is a vertical scrolling shoot ‘em up rogue-like video game that takes place in a
+                    galaxy that’s
+                    been taken over by mutated machinery and aliens. The player has to stop the mutation by destroying
+                    the black
+                    hole generators that cause it.
+                    The player can choose from 5 different unique heroes, each equipped with a special ship and unique
+                    skills.
+                    The enemies are different from run to run in every aspect. So the player has to rely on skill,
+                    rather than
+                    memory.
+                </p>
+
+                <p class="panel-small-title color-meteoric-wars">
+                    Game Systems
+                </p>
+
+                <p class="paragraph-Space panel-paragraph">
+                    Here's a list of some the systems implemented for the game that I'd like to highlight:
+                </p>
+
+                <ul class="paragraph-Space panel-paragraph">
+                    <li class="bulletPoint ">
+                        <b class="color-meteoric-wars">Procedural spaceships generation</b>: All the enemies in the
+                        game are
+                        procedurally generated except for bosses and the shop (which you can optionally fight.) This
+                        feature
+                        came to life due to my lack of artistic skills. I wrote a simple algorithm that takes predefined
+                        spaceship body parts (body, wings, and tail) randomizes their dimensions, colors and numbers,
+                        and mashes
+                        it all together to create (mostly) good-looking spaceships that fit the game style.
+                    </li>
+
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop
+                               data-src="Media/MeteoricWars/SpaceShipsEditor.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+                    <li class="bulletPoint">
+                        <b class="color-meteoric-wars">Procedural enemy spaceship behaviour and waves generation</b>:
+                        On top of randomly setting the spaceship’s visuals, the game also procedurally generates values
+                        and sets
+                        for their behaviours. Things like shooting, movement, and abilities (for some ships.) These
+                        values are
+                        saved in CSV files read in Unity.
+                        This system takes in a difficulty value from 0 to 1 where zero being the easiest the enemy can
+                        be and
+                        one being the hardest.
+                        The system also controls the stats of the ship like HP, damage, movement speed, etc.
+                        Additionally, the waves in which the enemies show up are also procedurally generated. The system
+                        ensures
+                        the types of enemy ships are varied and well distributed across the waves. It also slowly ramps
+                        up the
+                        difficulty as the player progresses.
+                    </li>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/EB_02.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/EB_01.webm">
+                            <source type="video/webm">
+                        </video>
+
+                        <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/EB_03.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/EB_04.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/EB_05.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+                    <li class="bulletPoint">
+                        <b class="color-meteoric-wars">Local multiplayer</b>: The game can be played by one or even
+                        better,
+                        two players locally on the same device. The game will dynamically increase in difficulty
+                        depending on
+                        the number of players.
+                    </li>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Multiplayer.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+                    <li class="bulletPoint">
+                        <b class="color-meteoric-wars">Natural hazards</b>: As the player progresses, natural hazards
+                        have a
+                        likelihood of taking place at any time. I didn’t get the chance to implement a lot of these,
+                        only two as
+                        I haven’t settled down on the levels yet. The first one is the meteor shower in which meteors of
+                        different shapes and sizes randomly fall, destroying everything in their paths, enemies and
+                        players
+                        alike. The player can shoot and destroy those and can get rewards by destroying bigger ones. The
+                        second
+                        one is the gravity shift where the camera basically rotates so that players have to continue
+                        their
+                        fights with new inputs.
+
+                        <div class="imagesGrid">
+                            <video class="video-webm" autoplay muted loop
+                                   data-src="Media/MeteoricWars/Astroids_lvl1.webm">
+                                <source type="video/webm">
+                            </video>
+                            <video class="video-webm" autoplay muted loop
+                                   data-src="Media/MeteoricWars/Astroids_lvl2.webm">
+                                <source type="video/webm">
+                            </video>
+                            <video class="video-webm" autoplay muted loop
+                                   data-src="Media/MeteoricWars/Astroids_lvl3.webm">
+                                <source type="video/webm">
+                            </video>
+                        </div>
+
+                        <b class="color-meteoric-wars">Enemy drops</b>: Upon enemies’ death, they have a chance of
+                        dropping
+                        items that the player can collect. So far, there are only three collectables in the game: coins,
+                        experience points, and health packs.
+                        The values and the drop rates of these drops are dynamic and situational.
+                        For example, stronger enemies drop bigger amounts of these collectables and this is signified by
+                        the
+                        size of the collectable and the rate at which it pulses. Another example is that health packs
+                        have an
+                        extremely low likelihood of dropping if the player’s health is full and drop more often when
+                        they’re
+                        low.
+
+                        <div class="imagesGrid">
+                            <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Drops.webm">
+                                <source type="video/webm">
+                            </video>
+                        </div>
+                    </li>
+
+                    <p><b class="color-meteoric-wars">Abilities shop</b>: As the players progress, they’ll need to
+                        step up
+                        their game. The best way to do this is with some abilities which they can purchase from the
+                        shop.
+                        The shop shows up in between waves now and then and offers a selection of abilities some of
+                        which are
+                        unique to each player character while others are common and mutual between all (even sometimes
+                        enemies.)
+                        The player can approach the shop, interact with it, and purchase the skills using the coins they
+                        collected.
+                    </p>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop
+                               data-src="Media/MeteoricWars/Shop_Interaction.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/ShopMenus.webm">
+                            <source type="video/webm">
+                        </video>
+
+                        <p class="paragraph-Space">
+                            The player can attack the shop. When the shop's HP go down, it enters its aggressive state.
+                        </p>
+
+                        <video class="video-webm" autoplay muted loop
+                               data-src="Media/MeteoricWars/Shop_FirstLevel.webm">
+                            <source type="video/webm">
+                        </video>
+
+                        <p class="paragraph-Space">
+                            The shop upgrades its aggressive state every time the player destroys it. The stronger the
+                            shop
+                            gets, the more rewards it drops when destroyed.
+                        </p>
+
+                        <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Shop_MaxLevel.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+
+                    <li class="bulletPoint">
+                        <b class="color-meteoric-wars">Abilities</b>: The abilities purchased from the shop can either
+                        be
+                        consumable, reusable, or a relic. The player can have up to four of these at a time, otherwise,
+                        they’ll
+                        have to remove what they don’t need anymore.
+                        The abilities can temporarily or permanently buff, heal, add defensive properties, increase
+                        mobility, or
+                        transform the player, summon companions, launch powerful attacks, and more.
+                    </li>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Abilities.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+                    <li class="bulletPoint">
+                        <b class="color-meteoric-wars">Player level up</b>: When the player collects enough experience
+                        points,
+                        they can level up which enhances their weapon damage, rate, coverage area, and sometimes adds
+                        effects to
+                        them.
+                    </li>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/PlayerLevelUp.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+                </ul>
+
+                <p class="panel-small-title color-meteoric-wars">
+                    Unity Editor Tools
+                </p>
+                <p class="paragraph-Space panel-paragraph">
+                    I'm a big fan of Unity Editor scripts and I often get carried away during the development time
+                    making tools
+                    that make it enhance the management of the project and its features.
+                    The following are the tools I want to highlight:
+                </p>
+
+                <p class="panel-paragraph paragraph-Space">
+                    <b class="color-meteoric-wars">Game Editor Window</b>:
+                    To streamline testing and debugging,
+                    I developed a custom Editor Window that facilitates quick access to various classes, assets, and
+                    scenes.
+                    This tool significantly reduced the time required to locate and modify these components. The Game
+                    Editor
+                    tool has definitely accelerated my development workflow.
+                </p>
+                <div class="images-grid">
+                    <img class="overlay-image" data-src="Media/MeteoricWars/GameEditorWindow.png"
+                         alt="GameEditor_Screenshot">
+                </div>
+
+                <p class="panel-paragraph paragraph-Space">
+                    <b class="color-meteoric-wars">Game Manager Components Cacher</b>:
+                    One of the more tedious aspects of Unity development has been managing component references. To
+                    address
+                    this, I developed the Game Manager Cacher, a tool designed to streamline and optimize how components
+                    are
+                    accessed and managed within the Unity Editor.
+                    This tool organizes all component references into dynamically collapsible sections within the
+                    inspector
+                    depending on the headers added in the properties declaration, which enhances clarity and ease of
+                    use. An
+                    editor button does all this (except for project file references.)
+                </p>
+                <div class="images-grid">
+                    <img data-src="Media/MeteoricWars/GameManagerEditor.png" class="overlay-image"
+                         alt="GameManagerCacher_Screenshot">
+                </div>
+
+
+                <p class="panel-small-title color-meteoric-wars">
+                    Shader Graphs
+                </p>
+                <p class="paragraph-Space panel-paragraph">
+                    It is no secret that I'm not an artist. But a game need some hue in it, so I had to create shaders
+                    that can
+                    do the job for me.\n
+                    Here are the top shaders used in the game:
+                </p>
+
+                <p class="panel-paragraph paragraph-Space">
+                    <b class="color-meteoric-wars">Procedural Planets Shader</b>:
+                    "The planets were the last feature I worked on in the game; therefore,
+                    I didn’t have the chance to fully integrate them. This shader utilizes a noise texture, which it
+                    scales
+                    using customizable values,
+                    combines into a single texture, and then colors to produce aesthetically nice looking planets.
+                </p>
+                <div class="images-grid">
+                    <img data-src="Media/MeteoricWars/Planets_SG.png" class="overlay-image" alt="">
+                    <video class="video-webm" autoplay muted loop data-src="Media/MeteoricWars/Planets_Example.webm">
+                        <source type="video/webm">
+                    </video>
+                </div>
+
+                <p class="panel-paragraph paragraph-Space">
+                    <b class="color-meteoric-wars">Nebula shader</b>:
+                    The nebula (or clouds) background of the game consists of 2-3 overlaid sprites with different
+                    opacity
+                    values, each rendered using this shader.
+                </p>
+                <div class="images-grid">
+                    <img data-src="Media/MeteoricWars/NebulaSG.png" class="overlay-image" alt="">
+                    <img data-src="Media/MeteoricWars/Nebula_Example.png" class="overlay-image" alt="">
+                    <img data-src="Media/MeteoricWars/Nebula_Example_01.png" class="overlay-image" alt="">
+                </div>
+
+                <p class="panel-paragraph paragraph-Space">
+                    <b class="color-meteoric-wars">Stars shader</b>:
+                    The stars were the first visual element I added to the game. Initially, they were created using a
+                    particle
+                    system, but I found this approach difficult to manage. As a solution, I developed a shader graph to
+                    handle
+                    the star animations more efficiently.
+                </p>
+                <div class="images-grid">
+                    <img data-src="Media/MeteoricWars/Stars_SG.png" class="overlay-image" alt="">
+                    <img data-src="Media/MeteoricWars/Stars_Example.png" class="overlay-image" alt="">
+                </div>
+
+                <div class="middle-icon-container">
+                    <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+                    <a href="https://github.com/TyRadman/PortfolioCode/tree/99288edda54252b9b0db06500eb81505b807dc33/MeteoricWars"
+                       class="link-text" target="_blank">Download source code
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- TANKLIKE PANEL -->
+    <div id="tanklikePanel" class="project-panel inactive">
+        <div class="project-panel-container">
+            <section class="tanklike-main-section">
+                <h1 class="color-tanklike title">Tanklike</h1>
+            </section>
+
+            <div class="transition-spacer tanklike-title-transition"></div>
+
+            <section class="middle-gray">
+                <div class="videoContainer">
+                    <iframe class="responsive-video" src="https://www.youtube.com/embed/6xzyuSAMfoQ?si=vsigiILjy4NMFAq-"
+                            allowfullscreen></iframe>
+                </div>
+                <table class="project-table">
+                    <thead>
+                    <tr>
+                        <th class="table-head table-head-tanklike">
+                            Role
+                        </th>
+                        <th class="table-head table-head-tanklike">
+                            Platform
+                        </th>
+                        <th class="table-head table-head-tanklike">
+                            Tools and technologies
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <th class="table-item table-item-tanklike">
+                            Developer, Tech Artist
+                        </th>
+                        <th class="table-item table-item-tanklike">
+                            <div class="imageContainer">
+                                <img src="Media/Icons/pc.svg" class="platform-icon">
+                                <p class="platform-name">PC</p>
+                            </div>
+                        </th>
+                        <th class="table-item table-item-tanklike">
+                            Unity, Adobe Photoshop, Blender, Github
+                        </th>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="transition-spacer tanklike-content-transition"></div>
+
+            <section class="tanklike-main-section">
+                <p class="panel-paragraph paragraph-tanklike">
+                    Tanklike is tank game that I've been developing alongside Mohazza, a close friend and collaborator.
+                    <br/>Our
+                    shared enthusiasm for Battle City, a childhood favorite which we remade in 3D three years ago,
+                    inspired
+                    us
+                    to take on this new project.
+                </p>
+
+                <p class="panel-small-title color-tanklike">
+                    Concept
+                </p>
+
+                <p class="paragraph-tanklike panel-paragraph">
+                    Tanklike Adventure is a tank game inspired by the classical Battle City where players pilot,
+                    upgrade,
+                    and
+                    customize their
+                    tanks to reclaim humanity’s post-apocalyptic world ruled by rogue AI tanks in a procedurally
+                    generated
+                    world.
+                </p>
+
+                <p class="panel-small-title color-tanklike">
+                    Game Systems
+                </p>
+
+                <p class="paragraph-tanklike panel-paragraph">
+                    While Tanklike is still in development, we have successfully implemented many of the core mechanics
+                    we
+                    envisioned, with a few remaining to be refined through further playtesting. Here are some of the key
+                    features and mechanics I have incorporated so far in the project:
+                </p>
+
+                <ul class="paragraph-tanklike panel-paragraph">
+
+                    <p><b class="color-tanklike">Tank recoil system</b>: In Tanklike, tanks experience a recoil effect
+                        when moving, halting, or firing, akin to real-life vehicles.
+                        Initially, we implemented a static recoil animation, which did the job at the time. However, to
+                        account
+                        for the varied dynamics of different actions,
+                        I developed the Tank Recoil System. This system performs dynamic animations by adjusting
+                        intensities
+                        and
+                        motion curves specific to each action.
+                        I used Unity’s Scriptable Objects to store and reuse the values passed to the system to make it
+                        easy
+                        to
+                        adjust the values when needed.
+                    </p>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/TankRecoil.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+
+                    <p><b class="color-tanklike">Procedural Level Generation</b>: I designed and implemented a
+                        procedural
+                        level generator that dynamically constructs levels by connecting random rooms from a pool.
+                        Tanklike is a room-based game with camera transitions between rooms. This design simplified the
+                        complexity of the level generation algorithm, as there were no hallways to connect the rooms.
+                        The system places key rooms—the boss room, the player start room, and the shop—within the level
+                        layout
+                        and ensures they are not directly connected to one another.
+                        As for further regions in the level, the player will be forced to look for 3 keys that unlock
+                        the
+                        boss
+                        room throughout the entire level.
+                        <br/>P.S. The scale and number of rooms in the screenshot are exaggerated. The actual game has
+                        fewer
+                        rooms.
+
+                    </p>
+                    <div class="imagesGrid">
+                        <img data-src="Media/Tanklike/LevelGeneration.png" class="overlay-image"
+                             alt="Tanklike_LevelGeneration_ScreenShot">
+                    </div>
+
+                    <p><b class="color-tanklike">Local Multiplayer</b>: Tanklike has a multiplayer option that
+                        allows
+                        players to play together on the same device.
+                        The system was implemented using Unity's new input system. The difficulty of the game
+                        dynamically
+                        increases in multiplayer mode.
+                    </p>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/TankRecoil.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+
+                    <p><b class="color-tanklike">Aim-assit</b>: The game has an aim-assist feature that takes place
+                        when
+                        the player stops both movement and aim. This adds a little boost to players who have
+                        difficulties
+                        aiming
+                        in the game.
+                    </p>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/AimAssist.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+
+                    <p><b class="color-tanklike">Player Skill Tree</b>: In Tanklike, players can enhance their tanks
+                        by
+                        upgrading weapons, gaining new abilities, and increasing stats through a skill tree.
+                        A key challenge was enabling the UI to be navigable with button inputs for controller users,
+                        eliminating
+                        the need for cursor control. I addressed this by developing a custom UI element framework.
+                        This framework includes a parent component that manages navigation through four directional
+                        slots,
+                        with
+                        each slot having a definable destination. The process of setting these destinations is
+                        streamlined
+                        with
+                        a custom editor script.
+                        This navigation setup is applied across all UI components, including the skill tree cells.
+                        <br/>
+                        I only implemented 5 skills in the skill tree as we haven't fully tested the game's overall
+                        progression.
+                        It's still far down the project's timeline. But the system's core functionality is working.
+                    </p>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/SkillTree.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+
+                    <p><b class="color-tanklike">Dynamic Camera Controls</b>: Camera control in Tanklike evolved as
+                        the
+                        project progressed. Initially, we utilized Cinemachine for basic follow mechanics, tracking the
+                        player’s
+                        movement. However, to better meet gameplay needs, I developed an enhanced camera controller with
+                        several
+                        key features:
+                    <ul>
+                        <li>
+                            The camera follows the player’s cursor instead of the player directly, providing a better
+                            feeling
+                            when aiming and exploring.
+                        </li>
+                        <li>
+                            In two-player mode, the camera follows the midpoint between both players' cursors, ensuring
+                            both
+                            are
+                            always in view.
+                        </li>
+                        <li>
+                            The camera’s following speed increases when a player is boosting, keeping the action in
+                            frame
+                            during
+                            high-speed movements.
+                        </li>
+                        <li>
+                            The camera zooms out during combat for a broader view and zooms in during safe periods for a
+                            more
+                            focused exploration.
+                        </li>
+                        <li>
+                            During key events, such as entering a boss room, the camera automatically focuses on the
+                            main
+                            targets to enhance the dramatic impact.
+                        </li>
+                        <li>
+                            At all times, the camera keeps the outer boundaries of the room out of view.
+                        </li>
+                    </ul>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/CameraControls.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+
+                    <p><b class="color-tanklike">Player constraints</b>: In Tanklike, I implemented the player
+                        constraints system, a straightforward but crucial mechanism that regulates available player
+                        actions
+                        at
+                        any given moment.
+                        This system determines whether players can shoot, move, use hold-down abilities, super
+                        abilities,
+                        boost,
+                        etc., based on their current state in the game.
+                        Configurable directly in the Unity Inspector, this system allows for easy adjustments and
+                        real-time
+                        application to gameplay scenarios.
+                    </p>
+                    <div class="imagesGrid">
+                        <video class="video-webm" autoplay muted loop data-src="Media/Tanklike/PlayerConstraints.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+
+                    <p><b class="color-tanklike">Tools Shop</b>: In Tanklike, players have the opportunity to
+                        customize
+                        their gameplay through the Tools Shop.
+                        Here, players can purchase special tools that offer a range of abilities, enhancing their
+                        tactical
+                        options. These tools include attack enhancements, healing capabilities, and the ability to
+                        summon
+                        assistant bots, among others.
+                        Each tool has limited uses, adding a strategic layer to resource management. Additionally,
+                        players
+                        can
+                        sell tools they no longer need back to the shop in exchange for coins.
+                    </p>
+                    <div class="imagesGrid">
+                        <video autoplay muted loop class="video-webm" data-src="Media/Tanklike/Shop_Buy.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video autoplay muted loop class="video-webm" data-src="Media/Tanklike/Shop_ToolsUse.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video autoplay muted loop class="video-webm" data-src="Media/Tanklike/Shop_Sell.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+                </ul>
+
+
+                <p class="panel-small-title color-tanklike">
+                    Unity Editor Tools
+                </p>
+                <p class="paragraph-tanklike panel-paragraph">
+                    I love messing with the Unity Editor scripts and frequently invest some development time creating
+                    tools
+                    that
+                    improve project and feature management.
+                    Here are the tools I'd like to highlight:
+                </p>
+
+                <p class="paragraph-tanklike panel-paragraph">
+                    <b class="paragraph-tanklike">Mapmaker</b>:
+                    I implemented a mapmaker tool that streamlined our room design process.
+                    With this tool, we could build the room using tiles, set spawn points for enemies, level props, and
+                    destructibles that drop collectables.
+                    The visuals of the individual tiles and props change depending on the level.
+                    The room is then saved as a scriptable object and can be viewed by the inspector by drawing a
+                    simplified
+                    version of it using a custom editor script.
+                </p>
+                <div class="images-grid">
+                    <video autoplay muted loop class="video-webm" data-src="Media/Tanklike/MapMaker.webm">
+                        <source type="video/webm">
+                    </video>
+                    <video autoplay muted loop class="video-webm" data-src="Media/Tanklike/Map.webm">
+                        <source type="video/webm">
+                    </video>
+                </div>
+
+                <p class="paragraph-tanklike panel-paragraph">
+                    <b class="paragraph-tanklike">Component Breaks</b>:
+                    I implemented a little custom editor script that acts as a visual representation of a break between
+                    groups
+                    of components that are placed on the same game object.
+                    The font size, text, and colors can be set through a collapsable button in the break itself.
+                </p>
+                <div class="images-grid">
+                    <img data-src="Media/Tanklike/Breaks.png" class="overlay-image" alt="Tanklike_Breaks_ScreenShot">
+                </div>
+
+                <div class="middle-icon-container">
+                    <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+                    <a href="https://github.com/TyRadman/PortfolioCode/tree/99288edda54252b9b0db06500eb81505b807dc33/MeteoricWars"
+                       class="link-text" target="_blank">Download source code
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Cubarun PANEL -->
+    <div id="cubarunPanel" class="project-panel inactive">
+        <div class="project-panel-container">
+            <section class="cubarun-main-section">
+                <h1 class="color-cubarun title">Cubarun</h1>
+            </section>
+
+            <div class="transition-spacer cubarun-title-transition"></div>
+
+            <section class="middle-gray">
+                <div class="videoContainer">
+                    <iframe class="responsive-video" src="https://www.youtube.com/embed/T1QDxIIwrMg?si=PDZvlBjyG4LqKCKa"
+                            allowfullscreen></iframe>
+                </div>
+                <table class="project-table">
+                    <thead>
+                    <tr>
+                        <th class="table-head table-head-cubarun">
+                            Role
+                        </th>
+                        <th class="table-head table-head-cubarun">
+                            Platform
+                        </th>
+                        <th class="table-head table-head-cubarun">
+                            Tools and technologies
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <th class="table-item table-item-cubarun ">
+                            Solo Developer
+                        </th>
+                        <th class="table-item table-item-cubarun">
+                            <div class="imageContainer">
+                                <img src="Media/Icons/pc.svg" class="platform-icon">
+                                <p class="platform-name">PC</p>
+                                <img src="Media/Icons/smartphone.svg" class="platform-icon">
+                                <p class="platform-name">Mobile</p>
+                            </div>
+                        </th>
+                        <th class="table-item table-item-cubarun">
+                            Unity, Adobe Photoshop, Blender
+                        </th>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="transition-spacer cubarun-content-transition"></div>
+
+            <section class="cubarun-main-section">
+                <p class="paragraph-cubarun panel-paragraph">
+                    Cubarun was my gateway to game development. I followed a tutorial made by the amazing Brackeys, and
+                    learnt a
+                    lot about Unity along the way.
+                    After I was done with the simple game introduced in the tutorial, I decided to take it a bit
+                    further. I
+                    managed to implement a lot of fun systems for the first time in my life.<br/>
+                    And that was the beginning of a journey that is still ongoing.
+                </p>
+
+                <p class="panel-small-title color-cubarun">
+                    Concept
+                </p>
+
+                <p class="paragraph-cubarun panel-paragraph">
+                    Cubarun is an endless runner game where the player controls a cube with special abilities to collect
+                    coins
+                    and get as far down the cubes world as they can.<br/>
+                    The player can collect coins along the way with which they can buy new cubes with new powers to be
+                    able
+                    to
+                    get further into the endless level.<br/>
+                    I implemented a lot of systems in this game. And while the project was architectured by undergrad
+                    me,
+                    I was amazed that the whole thing worked together still without the need to fix any bugs. After all,
+                    this
+                    project is 4 years old by now.
+                </p>
+
+                <ul class="paragraph-cubarun panel-paragraph">
+                    <p><b class="color-cubarun">Level Generation</b>: To achieve the endless runner dynamic in Cubarun,
+                        I developed a random level generation system that dynamically constructs the game environment as
+                        the
+                        player progresses.
+                        This system operates by monitoring the player's position, adding new tiles ahead of the player
+                        and
+                        removing old ones from behind to maintain continuous gameplay without loading interruptions.
+                        Each tile is selected based on a set of probabilities that determine which tiles are likely to
+                        follow.
+                        To enhance variety and prevent repetition, the system tracks previously chosen tiles and adjusts
+                        their
+                        spawn likelihood.
+                        As the player advances, the difficulty of the level increases by either increasing the
+                        likelihood of
+                        spawning more difficult tiles to cross or by increasing the difficulty of a chosen tile. For
+                        instance, a
+                        tile that has a spinning laser beam will have the laser spin even faster.
+                    </p>
+                    <div class="imagesGrid">
+                        <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_Maneuver.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video autoplay muted loop class="video-webm"
+                               data-src="Media/Cubarun/Cubarun_LaserEvasion.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_LaserDeath.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_HitDeath.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+
+                    <p><b class="color-cubarun">Player Selection Menu</b>:
+                        I designed and implemented a simple player selection menu in that allows players to choose and
+                        purchase
+                        cubes,
+                        each featuring unique abilities.
+                        This system not only provides a choice of characters but also adds depth to the gameplay through
+                        special
+                        abilities that enhance player strategy.
+                        In addition to the abilities, all cubes have the ability to speed up or slow down, providing
+                        crucial
+                        gameplay mechanics that players can use tactically to navigate through increasingly difficult
+                        levels.
+                    </p>
+                    <div class="imagesGrid">
+                        <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_Shop.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_StartGame.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_SlowMotion.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video autoplay muted loop class="video-webm"
+                               data-src="Media/Cubarun/Cubarun_MetalAbility.webm">
+                            <source type="video/webm">
+                        </video>
+                        <video autoplay muted loop class="video-webm" data-src="Media/Cubarun/Cubarun_SlowDown.webm">
+                            <source type="video/webm">
+                        </video>
+                    </div>
+
+                </ul>
+
+                <div class="middle-icon-container">
+                    <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+                    <a href="https://github.com/TyRadman/PortfolioCode/tree/cc96844c4c03f60645320b43a6976d5be80c2dd9/Cubarun"
+                       class="link-text" target="_blank">Download source code</a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- VR -->
+    <div id="metroVancouverPanel" class="project-panel inactive">
+        <div class="project-panel-container">
+            <section class="vr-main-section">
+                <h1 class="color-vr title">MetroVancouver VR Project</h1>
+            </section>
+
+            <div class="transition-spacer vr-title-transition"></div>
+
+            <section class="middle-gray">
+                <div class="videoContainer">
+                    <iframe class="responsive-video" src="https://www.youtube.com/embed/bVq_YHCvwGM?si=XzZ9mROoHqf5KwIr"
+                            allowfullscreen></iframe>
+                </div>
+                <table class="project-table">
+                    <thead>
+                    <tr>
+                        <th class="table-head table-head-vr">
+                            Role
+                        </th>
+                        <th class="table-head table-head-vr">
+                            Platform
+                        </th>
+                        <th class="table-head table-head-vr">
+                            Tools and technologies
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <th class="table-item table-item-vr">
+                            Developer
+                        </th>
+                        <th class="table-item table-item-vr">
+                            <div class="imageContainer">
+                                <img src="Media/Icons/vr-headset.svg" class="platform-icon">
+                                <p class="platform-name">VR (Quest 3)</p>
+                            </div>
+                        </th>
+                        <th class="table-item table-item-vr">
+                            Unity, ArcGIS, Adobe Photoshop, Blender, Github
+                        </th>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="transition-spacer vr-content-transition"></div>
+
+            <section class="vr-main-section">
+                <p class="panel-paragraph paragraph-vr">
+                    Discover the Unseen is a virtual reality (VR) project created for MetroVancouver.
+                    The project is designed to offer an interactive, immersive exploration of MetroVancouver's key facilities and infrastructure through a VR experience,
+                    utilizing Unity and ArcGIS technologies. This was a 3 months process that included ideation, planning, client meetings, and documentation
+                    (which took roughly 7 weeks) before we started the production phase during which I was responsible for the development of the product.
+                </p>
+
+                <p class="panel-small-title color-vr">
+                    Concept
+                </p>
+
+                <p class="panel-paragraph paragraph-vr">
+                    The experience starts with a user interface that guides participants into a VR environment,
+                    where they can explore a detailed map of MetroVancouver with interactive elements. These elements include pinpoints on a mini-map,
+                    allowing users to virtually transport to specific locations. Each location represents a site where a 360-degree video of MetroVancouver infrastructure was recorded.
+                    These videos appear as orbs, and when a user touches an orb, they are taken to a full 360-degree view of the video.
+                    This process can then be repeated with other locations.
+                </p>
+
+                <p class="panel-small-title color-vr">
+                    Game Systems
+                </p>
+
+                <p class="paragraph-vr panel-paragraph">
+                    This project was my first attempt working with both VR as a technology and ArcGIS. It was a fun learning journey during which I learnt a lot about both
+                    technologies. I was surprised by how easy Unity makes it to develop VR apps using the 'XR Interaction Toolkit'.
+                    I'd like to highlight a couple of systems that I worked on in this project:
+                </p>
+
+                <p class="paragraph-vr panel-paragraph"><b class="color-vr">ArcGIS Map</b>: One of the client's expectations of my team was integrating ArcGIS into the app.
+                    I used the SDK Esri provides for Unity to render the map in VR which was one of the big tasks that slowed down my process as it set a lot of
+                    limitations to the Camera and controls in both Game and Edit mode in Unity.
+                    I eventually managed to get it to work with both by slightly modifying a script provided by the SDK and drastically changing the hierarchical structure of the project.
+                    I also managed to make a little system that allowed users to travel based on real-world coordinates that correspond to the map in the app.
+                </p>
+
+                <div class="imagesGrid">
+                    <video autoplay muted loop class="video-webm">
+                        <source src="Media/VR/VR_ArcGISMap.webm" type="video/webm">
+                    </video>
+                </div>
+
+                <div class="middle-icon-container">
+                    <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+                    <a href="https://github.com/TyRadman/PortfolioCode/tree/99288edda54252b9b0db06500eb81505b807dc33/MeteoricWars"
+                       class="link-text" target="_blank">Download source code
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Battle City -->
+    <div id="battleCityPanel" class="project-panel inactive">
+        <div class="project-panel-container">
+            <section class="vr-main-section">
+                <h1 class="color-vr title">MetroVancouver VR Project</h1>
+            </section>
+
+            <div class="transition-spacer vr-title-transition"></div>
+
+            <section class="middle-gray">
+                <div class="videoContainer">
+                    <iframe class="responsive-video" src="https://www.youtube.com/embed/oOmojSylfLg?si=Z-ruw3gY14tiJ72T"
+                            allowfullscreen></iframe>
+                </div>
+                <table class="project-table">
+                    <thead>
+                    <tr>
+                        <th class="table-head table-head-vr">
+                            Role
+                        </th>
+                        <th class="table-head table-head-vr">
+                            Platform
+                        </th>
+                        <th class="table-head table-head-vr">
+                            Tools and technologies
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <th class="table-item table-item-vr">
+                            Developer
+                        </th>
+                        <th class="table-item table-item-vr">
+                            <div class="imageContainer">
+                                <img src="Media/Icons/pc.svg" class="platform-icon">
+                                <p class="platform-name">PC</p>
+                            </div>
+                        </th>
+                        <th class="table-item table-item-vr">
+                            Unity, Blender, Photoshop, Github
+                        </th>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="transition-spacer vr-content-transition"></div>
+
+            <section class="vr-main-section">
+                <p class="panel-paragraph paragraph-vr">
+                    A close friend of mine and I decided to remake the game in 3D as a part of our learning journey and love for old-school games.
+                    We recreated the entire Battle City game in 3D in Unity in less than a month, using Blender to build our models and textures, and collaborating remotely.
+                    Battle City is a multi-directional shooter video game for the Family Computer produced and published in 1985 by Namco for Nintendo family computer (AKA Famicom.)
+                    This project is 3D remake of the original game that was done for fun.
+                </p>
+
+                <p class="panel-small-title color-vr">
+                    Concept
+                </p>
+
+                <p class="panel-paragraph paragraph-vr">
+                    Battle City is a multi-directional shooter video game for the Family Computer produced and published in 1985 by Namco for Nintendo family computer (AKA Famicom.)
+                    This project is 3D remake of the original game that was done for fun.
+                </p>
+
+                <p class="panel-small-title color-vr">
+                    Contribution
+                </p>
+
+                <p class="paragraph-vr panel-paragraph">
+                    In my 3D remake of Battle City, I enhanced efficiency by automating level and enemy creation.
+                    Instead of manually assembling levels, I developed a script that interprets a 13x13 grid of characters that act as tiles
+                    (the size of the map in the original game was 13*13.) Each character represents a specific tile type, like 'w' for water and ‘g’ for grass.
+                    The script similarly automates enemy deployment by processing sequences of 20 numbers, each indicating an enemy type, to populate each level.
+                    <br/>
+                    I added extra features to add more to the experience, such as a camera shake that ranges in strength based on the event,
+                    a camera follow feature that takes away the dullness of only seeing the tanks move and post-processing effects to make the environment more interesting.
+                    <br/>
+                    In addition to that, I was responsible for implementing the player’s movement and interactions,
+                    the enemies’ AI that matched the original game’s enemies AI, level generation, local multiplayer, UI, post-processing and some modelling, and the power-ups.
+
+                </p>
+
+                <div class="imagesGrid">
+
+                    <video autoplay muted loop class="video-webm">
+                        <source src="Media/BattleCity/GameplayWithExplosion.webm" type="video/webm">
+                    </video>
+                    <video autoplay muted loop class="video-webm">
+                        <source src="Media/BattleCity/InEditorShot.webm" type="video/webm">
+                    </video>
+                    <video autoplay muted loop class="video-webm">
+                        <source src="Media/BattleCity/MapMaker.webm" type="video/webm">
+                    </video>
+                    <img src="Media/BattleCity/MainScreenshot.png" class="overlay-image" alt="Puzzle_Interaction_Screenshot">
+                    <img src="Media/BattleCity/HiScreenshot.png" class="overlay-image" alt="Puzzle_Interaction_Screenshot">
+                </div>
+
+                <div class="middle-icon-container">
+                    <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+                    <a href="https://github.com/TyRadman/PortfolioCode/tree/99288edda54252b9b0db06500eb81505b807dc33/MeteoricWars"
+                       class="link-text" target="_blank">Download source code
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

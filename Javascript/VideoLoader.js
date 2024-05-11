@@ -66,7 +66,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if(img.src)
         {
-          if (!img.classList.contains('loaded')) {
+          if (!img.classList.contains('loaded'))
+          {
             img.classList.add('loaded');
           }
         }
