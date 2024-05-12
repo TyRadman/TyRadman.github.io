@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="Styles/PanelStyles_Common.css">
     <link rel="stylesheet" href="Styles/PanelStyles_MetroVancouver.css">
     <link rel="stylesheet" href="Styles/PlayCanvas.css">
+    <link rel="stylesheet" href="Styles/LoadingScreen.css">
     <!-- External JavaScript file -->
     <script src="Javascript/InfoPanelConnector.js"></script>
     <script src="Javascript/StartOverlay.js"></script>
@@ -76,6 +77,11 @@
     <!-- WIDOW PANEL -->
     <div id="widowPanel" class="project-panel inactive">
         <div class="project-panel-container">
+
+            <div id="loading-screen" class="hide">
+                <div id="progress-bar"></div>
+            </div>
+
             <section class="the-widow-main-section">
                 <h1 class="color-widow title">The Widow</h1>
             </section>
@@ -165,9 +171,9 @@
                     </li>
 
                     <div class="imagesGrid">
-                        <img src="Media/TheWidow/TheWidow_PuzzleInteraction_Closed.png" class="overlay-image"
+                        <img data-src="Media/TheWidow/TheWidow_PuzzleInteraction_Closed.png" class="overlay-image"
                              alt="Puzzle_Interaction_Screenshot">
-                        <img src="Media/TheWidow/TheWidow_Letter.png" class="overlay-image"
+                        <img data-src="Media/TheWidow/TheWidow_Letter.png" class="overlay-image"
                              alt="Puzzle_Interaction_Screenshot">
                     </div>
                     <li class="bulletPoint">
@@ -178,9 +184,9 @@
                         camera’s focus changes based on what object the player is looking at.
                     </li>
                     <div class="imagesGrid">
-                        <img src="Media/TheWidow/TheWidow_BlurEffect.gif" class="overlay-image"
+                        <img data-src="Media/TheWidow/TheWidow_BlurEffect.gif" class="overlay-image"
                              alt="Blur_Effect_Screenshot">
-                        <img src="Media/TheWidow/TheWidow_SprintEffect.gif" class="overlay-image"
+                        <img data-src="Media/TheWidow/TheWidow_SprintEffect.gif" class="overlay-image"
                              alt="Sprint_Effect_Screenshot">
                     </div>
                     <li class="bulletPoint">
@@ -192,14 +198,14 @@
                         different note that the player finds before coming across the puzzle.
                     </li>
                     <div class="imagesGrid">
-                        <img src="Media/TheWidow/TheWidow_Puzzle.gif" class="overlay-image" alt="">
+                        <img data-src="Media/TheWidow/TheWidow_Puzzle.gif" class="overlay-image" alt="">
                     </div>
                     <li class="bulletPoint">
                         <b class="color-widow">Dialogue and Tips</b>: A dialogue system adds a narrative to the game,
                         and a tips display system teaches players how to interact with the game.
                     </li>
                     <div class="imagesGrid">
-                        <img src="Media/TheWidow/TheWidow_FlashlightTip.gif" class="overlay-image" alt="">
+                        <img data-src="Media/TheWidow/TheWidow_FlashlightTip.gif" class="overlay-image" alt="">
                     </div>
                     <li class="bulletPoint">
                         <b class="color-widow">Enemy AI</b>: The entity chasing the player uses a finite state machine
@@ -220,7 +226,7 @@
                         more.
                     </li>
                     <div class="imagesGrid">
-                        <img src="Media/TheWidow/TheWidow_Inventory.png" class="overlay-image" alt="">
+                        <img data-src="Media/TheWidow/TheWidow_Inventory.png" class="overlay-image" alt="">
                     </div>
                     <li class="bulletPoint">
                         <b class="color-widow">Jump-scares System</b>: Before the player encounters the entity, random
@@ -229,15 +235,15 @@
                         from a distance before walking away.
                     </li>
                     <div class="imagesGrid">
-                        <img src="Media/TheWidow/TheWidow_Jumpscare.gif" class="overlay-image" alt="">
+                        <img data-src="Media/TheWidow/TheWidow_Jumpscare.gif" class="overlay-image" alt="">
                     </div>
                     <li class="bulletPoint">
                         <b class="color-widow">Start and End Menu</b>: Includes settings for brightness and audio
                         volume.
                     </li>
                     <div class="imagesGrid">
-                        <img src="Media/TheWidow/Widow_Settings.png" class="overlay-image" alt="">
-                        <img src="Media/TheWidow/TheWidow_MainMenu.png" class="overlay-image" alt="">
+                        <img data-src="Media/TheWidow/Widow_Settings.png" class="overlay-image" alt="">
+                        <img data-src="Media/TheWidow/TheWidow_MainMenu.png" class="overlay-image" alt="">
                     </div>
 
                     <li class="bulletPoint">

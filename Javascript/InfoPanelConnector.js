@@ -21,6 +21,8 @@ function openOverlay(panelName) {
   // the blur effect
   document.getElementById(blurBackgroundID).classList.remove(inactiveTag);
   document.getElementById(blurBackgroundID).classList.add(activeTag);
+
+  loadMedia(panelName);
 }
 
 window.addEventListener("message", function(event) {
@@ -39,3 +41,5 @@ function closeOverlay(panelName){
   document.getElementById(blurBackgroundID).classList.remove(activeTag);
   document.getElementById(blurBackgroundID).classList.add(inactiveTag);
 }
+
+

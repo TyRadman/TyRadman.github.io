@@ -1,0 +1,32 @@
+#loading-screen{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+#progress-bar{
+  width: 0%;
+  height: 5%;
+  background-color: red;
+}
+
+#loading-screen.show {
+  /*animation: showAnimation 5s ease-out forwards;*/
+  background-color: rgba(28, 28, 28, 255);
+  display: flex;
+}
+
+@keyframes hideAnimation {
+  from {
+    background-color: rgba(28, 28, 28, 255);
+    display: flex;
+  }
+  to {
+    background-color: rgba(28, 28, 28, 0);
+    display: none;
+  }
+}
+
+#loading-screen.hide {
+  animation: hideAnimation 5s ease-out forwards;
+}
