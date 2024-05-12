@@ -22,7 +22,7 @@ function openOverlay(panelName) {
   document.getElementById(blurBackgroundID).classList.remove(inactiveTag);
   document.getElementById(blurBackgroundID).classList.add(activeTag);
 
-  loadMedia(panelName);
+  // loadMedia(panelName);
 }
 
 window.addEventListener("message", function(event) {
