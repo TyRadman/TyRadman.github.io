@@ -28,5 +28,5 @@
 }
 
 #loading-screen.hide {
-  animation: hideAnimation 5s ease-out forwards;
+  animation: hideAnimation 1s ease-out forwards;
 }
