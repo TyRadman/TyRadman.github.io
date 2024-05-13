@@ -14,16 +14,17 @@
     <link rel="stylesheet" href="Styles/PanelStyles_Cubarun.css">
     <link rel="stylesheet" href="Styles/PanelStyles_Common.css">
     <link rel="stylesheet" href="Styles/PanelStyles_MetroVancouver.css">
+    <link rel="stylesheet" href="Styles/PanelStyles_BattleCity.css">
     <link rel="stylesheet" href="Styles/PlayCanvas.css">
     <link rel="stylesheet" href="Styles/LoadingScreen.css">
     <!-- External JavaScript file -->
-    <script src="Javascript/InfoPanelConnector.js"></script>
     <script src="Javascript/StartOverlay.js"></script>
+    <script src="Javascript/InfoPanelConnector.js"></script>
     <script src="Javascript/VideoLoader.js"></script>
 </head>
 <body>
 <div class="page-container">
-    <iframe src="https://playcanv.as/e/b/6eede869" class="playcanvas-content"></iframe>
+    <iframe src="https://playcanv.as/e/b/ba7e3a64" class="playcanvas-content"></iframe>
 
     <div id="initial-overlay">
         <div class="start-content-container">
@@ -38,7 +39,7 @@
                 <p class="Introduction-text">
                     Hello there, Adventurer! <br/> My name is Ty, and I'm deeply passionate about game design and
                     development. A self-taught developer,
-                    I’ve been honing my skills for nearly four years, with several games in development, including an
+                    I've been honing my skills for nearly four years, with several games in development, including an
                     upcoming roguelike title.
                     <br/><br/>
                     After completing my Information Technology degree in 2021, I began pursuing a Master of Digital
@@ -47,25 +48,43 @@
                     tutorials on remaking classic games with modern visuals and mechanics, though this project is
                     currently on hold due to my studies.
                     <br/><br/>
-                    I primarily use Unity for my projects and am expanding my skills into Unreal Engine to refine my
-                    C++.
+                    I primarily use Unity for my projects and am currently expanding my skills into Unreal Engine to
+                    refine my C++ through a school project using Unreal Engine 5.
                     I look forward to your feedback and hope you enjoy exploring my work!
+                    <br/><br/>
+                    <br/><br/>
+                    All 3D models and assets in this portfolio were created by me, except for some icons. I used the
+                    following tools to design and build this project:
                 </p>
-<!--                <p class="title color-widow">Here is a title</p>-->
-<!--                <p class="panel-small-title color-widow">Here is a small title</p>-->
-<!--                <p class="panel-paragraph color-widow">Here is a paragraph</p>-->
+                <!--                <p class="title color-widow">Here is a title</p>-->
+                <!--                <p class="panel-small-title color-widow">Here is a small title</p>-->
+                <!--                <p class="panel-paragraph color-widow">Here is a paragraph</p>-->
             </div>
+
+            <div class="start-icons-container">
+                <img src="Media/Icons/PlayCanvas_Icon.jpg" id="firstIcon" class="start-icon" data-icon="Playcanvas">
+                <img src="Media/Icons/Webstorm_Icon.png" class="start-icon" data-icon="Web Storm">
+                <img src="Media/Icons/HTMLIcon.png" class="start-icon" data-icon="HTML">
+                <img src="Media/Icons/JavascriptLogo.svg" class="start-icon" data-icon="Javascript">
+                <img src="Media/Icons/CSS3_logo.png" class="start-icon" data-icon="CSS">
+                <img src="Media/Icons/Blender_Icon.png" class="start-icon" data-icon="Blender">
+                <img src="Media/Icons/Photoshop_Icon.png" class="start-icon" data-icon="Adobe Photoshop">
+                <img src="Media/Icons/GithubIcon.svg" class="start-icon" data-icon="GitHub">
+            </div>
+
+            <p id="icon-text-displayer" class="Hidden">Name</p>
+
             <div class="mainMenuButtonsContainer">
                 <button id="startButton" class="menuButton startButton"><p>Start Game</p>
-                    <p class="little-text">HIGHLY RECOMMENDED! But only if you're on a computer</p></button>
-                <button id="websiteButton" class="menuButton websiteButton"><p>Continue to Phone Site</p>
-                    <p class="little-text">For mobile device users</p>
-                </button>
+                    <p class="little-text">The game experience only works on a computer</p></button>
+                <!--                <button id="websiteButton" class="menuButton websiteButton"><p>Continue to Phone Site</p>-->
+                <!--                    <p class="little-text">For mobile device users</p>-->
+                <!--                </button>-->
             </div>
 
             <div class="start-text-container">
                 <p class="start-footer">
-                    © 2024 by Ty Radman. All rights reserved. V.0.5
+                    © 2024 by Ty Radman. All rights reserved. V.0.6
                 </p>
             </div>
         </div>
@@ -137,9 +156,9 @@
                     was
                     an
                     opportunity for me to learn more about Unity by implementing interconnected game systems that worked
-                    together with the player character and the enemy’s AI.
+                    together with the player character and the enemy's AI.
 
-                    I had plans on releasing the game, but realized I’d need more assets than I was able to provide, so
+                    I had plans on releasing the game, but realized I'd need more assets than I was able to provide, so
                     I
                     stopped working on it when the game got to full playable state.
                 </p>
@@ -178,10 +197,10 @@
                     </div>
                     <li class="bulletPoint">
                         <b class="color-widow">Camera Effects System</b>: Features dynamic camera effects that respond
-                        to the player’s state. For example, the view gets distorted when the player runs out of stamina,
+                        to the player's state. For example, the view gets distorted when the player runs out of stamina,
                         and
                         the
-                        camera’s focus changes based on what object the player is looking at.
+                        camera's focus changes based on what object the player is looking at.
                     </li>
                     <div class="imagesGrid">
                         <img data-src="Media/TheWidow/TheWidow_BlurEffect.gif" class="overlay-image"
@@ -217,7 +236,7 @@
                     </li>
                     <li class="bulletPoint">
                         <b class="color-widow">Hide Spots</b>: Some spots can render the player invisible if the
-                        entity didn’t see the player hide there.
+                        entity didn't see the player hide there.
                     </li>
                     <li class="bulletPoint">
                         <b class="color-widow">Inventory System</b>: The player can collect and use items in the
@@ -265,7 +284,6 @@
 
         </div>
     </div>
-
 
     <!-- METEORIC WARS PANEL -->
     <div id="spacePanel" class="project-panel inactive">
@@ -323,7 +341,7 @@
                     Wings (a
                     game I played a lot when I was young) mixed with my love for pixel art and rogue-like games even
                     though the
-                    latter wasn’t a part of the plan initially.
+                    latter wasn't a part of the plan initially.
                 </p>
 
                 <p class="panel-small-title color-meteoric-wars">
@@ -332,7 +350,7 @@
 
                 <p class="paragraph-Space panel-paragraph">
                     Meteoric Wars is a vertical scrolling shoot ‘em up rogue-like video game that takes place in a
-                    galaxy that’s
+                    galaxy that's
                     been taken over by mutated machinery and aliens. The player has to stop the mutation by destroying
                     the black
                     hole generators that cause it.
@@ -371,7 +389,7 @@
                     </div>
                     <li class="bulletPoint">
                         <b class="color-meteoric-wars">Procedural enemy spaceship behaviour and waves generation</b>:
-                        On top of randomly setting the spaceship’s visuals, the game also procedurally generates values
+                        On top of randomly setting the spaceship's visuals, the game also procedurally generates values
                         and sets
                         for their behaviours. Things like shooting, movement, and abilities (for some ships.) These
                         values are
@@ -419,9 +437,9 @@
                     <li class="bulletPoint">
                         <b class="color-meteoric-wars">Natural hazards</b>: As the player progresses, natural hazards
                         have a
-                        likelihood of taking place at any time. I didn’t get the chance to implement a lot of these,
+                        likelihood of taking place at any time. I didn't get the chance to implement a lot of these,
                         only two as
-                        I haven’t settled down on the levels yet. The first one is the meteor shower in which meteors of
+                        I haven't settled down on the levels yet. The first one is the meteor shower in which meteors of
                         different shapes and sizes randomly fall, destroying everything in their paths, enemies and
                         players
                         alike. The player can shoot and destroy those and can get rewards by destroying bigger ones. The
@@ -432,20 +450,20 @@
 
                         <div class="imagesGrid">
                             <video class="video-webm" autoplay muted loop
-                                  >
+                            >
                                 <source src="Media/MeteoricWars/Astroids_lvl1.webm" type="video/webm">
                             </video>
                             <video class="video-webm" autoplay muted loop
-                                  >
+                            >
                                 <source src="Media/MeteoricWars/Astroids_lvl2.webm" type="video/webm">
                             </video>
                             <video class="video-webm" autoplay muted loop
-                                  >
+                            >
                                 <source src="Media/MeteoricWars/Astroids_lvl3.webm" type="video/webm">
                             </video>
                         </div>
 
-                        <b class="color-meteoric-wars">Enemy drops</b>: Upon enemies’ death, they have a chance of
+                        <b class="color-meteoric-wars">Enemy drops</b>: Upon enemies' death, they have a chance of
                         dropping
                         items that the player can collect. So far, there are only three collectables in the game: coins,
                         experience points, and health packs.
@@ -454,8 +472,8 @@
                         the
                         size of the collectable and the rate at which it pulses. Another example is that health packs
                         have an
-                        extremely low likelihood of dropping if the player’s health is full and drop more often when
-                        they’re
+                        extremely low likelihood of dropping if the player's health is full and drop more often when
+                        they're
                         low.
 
                         <div class="imagesGrid">
@@ -465,7 +483,7 @@
                         </div>
                     </li>
 
-                    <p><b class="color-meteoric-wars">Abilities shop</b>: As the players progress, they’ll need to
+                    <p><b class="color-meteoric-wars">Abilities shop</b>: As the players progress, they'll need to
                         step up
                         their game. The best way to do this is with some abilities which they can purchase from the
                         shop.
@@ -478,7 +496,7 @@
                     </p>
                     <div class="imagesGrid">
                         <video class="video-webm" autoplay muted loop
-                              >
+                        >
                             <source src="Media/MeteoricWars/Shop_Interaction.webm" type="video/webm">
                         </video>
                         <video class="video-webm" autoplay muted loop>
@@ -490,7 +508,7 @@
                         </p>
 
                         <video class="video-webm" autoplay muted loop
-                              >
+                        >
                             <source src="Media/MeteoricWars/Shop_FirstLevel.webm" type="video/webm">
                         </video>
 
@@ -509,8 +527,8 @@
                         <b class="color-meteoric-wars">Abilities</b>: The abilities purchased from the shop can either
                         be
                         consumable, reusable, or a relic. The player can have up to four of these at a time, otherwise,
-                        they’ll
-                        have to remove what they don’t need anymore.
+                        they'll
+                        have to remove what they don't need anymore.
                         The abilities can temporarily or permanently buff, heal, add defensive properties, increase
                         mobility, or
                         transform the player, summon companions, launch powerful attacks, and more.
@@ -590,7 +608,7 @@
                 <p class="panel-paragraph paragraph-Space">
                     <b class="color-meteoric-wars">Procedural Planets Shader</b>:
                     "The planets were the last feature I worked on in the game; therefore,
-                    I didn’t have the chance to fully integrate them. This shader utilizes a noise texture, which it
+                    I didn't have the chance to fully integrate them. This shader utilizes a noise texture, which it
                     scales
                     using customizable values,
                     combines into a single texture, and then colors to produce aesthetically nice looking planets.
@@ -707,7 +725,7 @@
                     upgrade,
                     and
                     customize their
-                    tanks to reclaim humanity’s post-apocalyptic world ruled by rogue AI tanks in a procedurally
+                    tanks to reclaim humanity's post-apocalyptic world ruled by rogue AI tanks in a procedurally
                     generated
                     world.
                 </p>
@@ -734,7 +752,7 @@
                         intensities
                         and
                         motion curves specific to each action.
-                        I used Unity’s Scriptable Objects to store and reuse the values passed to the system to make it
+                        I used Unity's Scriptable Objects to store and reuse the values passed to the system to make it
                         easy
                         to
                         adjust the values when needed.
@@ -780,7 +798,7 @@
                         </video>
                     </div>
 
-                    <p><b class="color-tanklike">Aim-assit</b>: The game has an aim-assist feature that takes place
+                    <p><b class="color-tanklike">Aim-assist</b>: The game has an aim-assist feature that takes place
                         when
                         the player stops both movement and aim. This adds a little boost to players who have
                         difficulties
@@ -810,7 +828,7 @@
                         <br/>
                         I only implemented 5 skills in the skill tree as we haven't fully tested the game's overall
                         progression.
-                        It's still far down the project's timeline. But the system's core functionality is working.
+                        It's still far down the project's timeline, but the system's core functionality is working.
                     </p>
                     <div class="imagesGrid">
                         <video class="video-webm" autoplay muted loop>
@@ -821,13 +839,13 @@
                     <p><b class="color-tanklike">Dynamic Camera Controls</b>: Camera control in Tanklike evolved as
                         the
                         project progressed. Initially, we utilized Cinemachine for basic follow mechanics, tracking the
-                        player’s
+                        player's
                         movement. However, to better meet gameplay needs, I developed an enhanced camera controller with
                         several
                         key features:
                     <ul>
                         <li>
-                            The camera follows the player’s cursor instead of the player directly, providing a better
+                            The camera follows the player's cursor instead of the player directly, providing a better
                             feeling
                             when aiming and exploring.
                         </li>
@@ -838,7 +856,7 @@
                             always in view.
                         </li>
                         <li>
-                            The camera’s following speed increases when a player is boosting, keeping the action in
+                            The camera's following speed increases when a player is boosting, keeping the action in
                             frame
                             during
                             high-speed movements.
@@ -952,7 +970,7 @@
 
                 <div class="middle-icon-container">
                     <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
-                    <a href="https://github.com/TyRadman/PortfolioCode/tree/99288edda54252b9b0db06500eb81505b807dc33/MeteoricWars"
+                    <a href="https://github.com/TyRadman/PortfolioCode/tree/ee5261ba7521269296a583e49c6c198615684f3f/Tanklike"
                        class="link-text" target="_blank">Download source code
                     </a>
                 </div>
@@ -1239,49 +1257,27 @@
     <!-- Battle City -->
     <div id="battleCityPanel" class="project-panel inactive">
         <div class="project-panel-container">
-            <section class="vr-main-section">
+            <section class="projects-main-section">
                 <h1 class="color-vr title">MetroVancouver VR Project</h1>
             </section>
 
-            <div class="transition-spacer vr-title-transition"></div>
+            <!--            <div class="transition-spacer vr-title-transition"></div>-->
 
             <section class="middle-gray">
                 <div class="videoContainer">
                     <iframe class="responsive-video" src="https://www.youtube.com/embed/oOmojSylfLg?si=Z-ruw3gY14tiJ72T"
                             allowfullscreen></iframe>
                 </div>
-                <table class="project-table">
-                    <thead>
-                    <tr>
-                        <th class="table-head table-head-vr">
-                            Role
-                        </th>
-                        <th class="table-head table-head-vr">
-                            Platform
-                        </th>
-                        <th class="table-head table-head-vr">
-                            Tools and technologies
-                        </th>
-                    </tr>
-                    </thead>
 
-                    <tbody>
-                    <tr>
-                        <th class="table-item table-item-vr">
-                            Developer
-                        </th>
-                        <th class="table-item table-item-vr">
-                            <div class="imageContainer">
-                                <img src="Media/Icons/pc.svg" class="platform-icon">
-                                <p class="platform-name">PC</p>
-                            </div>
-                        </th>
-                        <th class="table-item table-item-vr">
-                            Unity, Blender, Photoshop, Github
-                        </th>
-                    </tr>
-                    </tbody>
-                </table>
+                <p class="panel-paragraph paragraph-vr">
+                    A close friend of mine and I decided to remake the game in 3D as a part of our learning journey and
+                    love for old-school games.
+                    We recreated the entire Battle City game in 3D in Unity in less than a month, using Blender to build
+                    our models and textures, and collaborating remotely.
+                    Battle City is a multi-directional shooter video game for the Family Computer produced and published
+                    in 1985 by Namco for Nintendo family computer (AKA Famicom.)
+                    This project is 3D remake of the original game that was done for fun.
+                </p>
             </section>
 
             <div class="transition-spacer vr-content-transition"></div>
@@ -1316,7 +1312,7 @@
                     Instead of manually assembling levels, I developed a script that interprets a 13x13 grid of
                     characters that act as tiles
                     (the size of the map in the original game was 13*13.) Each character represents a specific tile
-                    type, like 'w' for water and ‘g’ for grass.
+                    type, like 'w' for water and ‘g' for grass.
                     The script similarly automates enemy deployment by processing sequences of 20 numbers, each
                     indicating an enemy type, to populate each level.
                     <br/>
@@ -1325,8 +1321,8 @@
                     a camera follow feature that takes away the dullness of only seeing the tanks move and
                     post-processing effects to make the environment more interesting.
                     <br/>
-                    In addition to that, I was responsible for implementing the player’s movement and interactions,
-                    the enemies’ AI that matched the original game’s enemies AI, level generation, local multiplayer,
+                    In addition to that, I was responsible for implementing the player's movement and interactions,
+                    the enemies' AI that matched the original game's enemies AI, level generation, local multiplayer,
                     UI, post-processing and some modelling, and the power-ups.
 
                 </p>
@@ -1356,6 +1352,66 @@
                 </div>
             </section>
 
+            <div class="transition-spacer vr-title-transition"></div>
+
+
+            <!-- Second Project -->
+            <section class="projects-main-section">
+                <h1 class="color-vr title">Falling Ball</h1>
+            </section>
+
+            <section class="middle-gray">
+
+                <p class="panel-paragraph paragraph-vr">
+                    The idea of Falling Ball is not new; it is similar to games like Color Switch, which was the initial
+                    inspiration for this project.
+                    The players must jump their way up without touching anything that is not the same the color as the
+                    ball.
+                    There are color switchers that change the ball's color to spice things up.
+                    </br>
+                    I wanted to see how hard it is to build a game with such mechanics with some extra tweaks.
+                    I eventually managed to pull it off earlier than expected.
+                </p>
+            </section>
+
+            <div class="transition-spacer vr-content-transition"></div>
+
+            <section class="vr-main-section">
+
+                <p class="panel-paragraph paragraph-vr">
+                    One of the new features I added to the game is a boss fight that also uses the
+                    avoid-different-colors mechanic.
+                    This added a new layer of fun to the game.
+                    I also added multiple characters with different visual effects and a best score system where the
+                    shortest number of jumps used to win a level is the highest score of that level.
+                </p>
+
+                <div class="imagesGrid">
+                    <video autoplay muted loop class="video-webm">
+                        <source src="Media/FallingBall/hitting-an-obstacle.webm" type="video/webm">
+                    </video>
+                    <video autoplay muted loop class="video-webm">
+                        <source src="Media/FallingBall/passing-through-obstacle.webm" type="video/webm">
+                    </video>
+                    <video autoplay muted loop class="video-webm">
+                        <source src="Media/FallingBall/boss-fight.webm" type="video/webm">
+                    </video>
+                    <video autoplay muted loop class="video-webm">
+                        <source src="Media/FallingBall/main-menu.webm" type="video/webm">
+                    </video>
+                    <img src="Media/FallingBall/WinScreen.jpg" class="overlay-image"
+                         alt="Puzzle_Interaction_Screenshot">
+                    <img src="Media/FallingBall/Levels.jpg" class="overlay-image"
+                         alt="Puzzle_Interaction_Screenshot">
+                </div>
+
+                <div class="middle-icon-container">
+                    <img src="Media/GithubIcon.png" class="middle-icon" alt="Github icon">
+                    <a href="https://github.com/TyRadman/PortfolioCode/tree/99288edda54252b9b0db06500eb81505b807dc33/MeteoricWars"
+                       class="link-text" target="_blank">Download source code
+                    </a>
+                </div>
+            </section>
         </div>
     </div>
 

@@ -1,3 +1,43 @@
 
 #battleCityPanel{
 }
+
+:root {
+    --textColor-vr: #b5c7b6;
+    --mainColor-projects: #282828;
+    --BGColor-projects: #282828;
+}
+
+.color-projects{
+    color: var(--mainColor-projects);
+}
+
+.paragraph-vr{
+    color: var(--textColor-vr);
+}
+
+.table-head-vr
+{
+    border: 3px solid var(--mainColor-vr);
+    color: var(--mainColor-vr);
+}
+
+.table-item-vr
+{
+    color: var(--textColor);
+    border: 3px solid var(--mainColor-vr);
+}
+
+.vr-title-transition{
+    background-image: url("Waves/Transition_MeteoricWars_01.svg");
+}
+
+.vr-content-transition{
+    background-image: url("Waves/Transition_MeteoricWars_02.svg");
+}
+
+.projects-main-section{
+    background-color: var(--BGColor-projects);
+    padding-bottom: 5%;
+}
+

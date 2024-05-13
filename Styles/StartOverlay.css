@@ -169,5 +169,48 @@
   letter-spacing: 0.2rem;
   font-size: 1rem;
   text-align: center;
-  margin-bottom: 2vh;
+  margin-bottom: 10vh;
+}
+
+.start-icons-container {
+  display: flex; /* Ensures icons are in a row */
+  width: 80%;
+  height: 5vh; /* Set a fixed height for the container */
+  overflow-x: auto; /* Allows horizontal scrolling if icons overflow */
+  white-space: nowrap; /* Prevents icons from wrapping into multiple lines */
+  justify-content: space-evenly;
+  margin: 10vh auto 0;
+}
+
+.start-icon {
+  height: 100%; /* Each icon's height matches the container's height */
+  width: auto; /* Auto width to maintain aspect ratio */
+  flex-shrink: 0; /* Prevents icons from shrinking */
+}
+
+/*.start-icon:hover{*/
+/*  transform: scale(0.8);*/
+/*  transition: transform 0.3s ease;*/
+/*}*/
+
+#icon-text-displayer {
+  color: white;
+  font-size: 2rem;
+  font-family: "Roboto Medium";
+  text-align: center;
+  margin: 5vh 0 5vh;
+}
+
+#icon-text-displayer.Shown{
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1; /* Start with invisible text */
+}
+
+#icon-text-displayer.Hidden{
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0; /* Start with invisible text */
+}
+
+#firstIcon{
+
 }
