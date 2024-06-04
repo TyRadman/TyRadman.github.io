@@ -2,10 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://tyradman.github.io/MainPortfolio/">
     <title>Redirecting...</title>
+    <script>
+        function isDesktop() {
+            // A simple check for mobile devices; there are more comprehensive ways to do this.
+            const userAgent = navigator.userAgent.toLowerCase();
+            return !(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(userAgent));
+        }
+
+        window.onload = function() {
+            if (!isDesktop()) {
+                window.location.href = "https://tyradman.github.io/mobile-portfolio/index.html";
+            } else {
+                window.location.href = "https://tyradman.github.io/MainPortfolio/";
+            }
+        }
+    </script>
 </head>
 <body>
-<p>If you are not redirected automatically, follow this <a href="https://tyradman.github.io/MainPortfolio/">link to the new site</a>.</p>
+<p>If you are not redirected automatically, follow this
+    <a id="redirect-link" href="https://tyradman.github.io/MainPortfolio/">link to the new site</a>.
+</p>
 </body>
 </html>
